@@ -1,0 +1,77 @@
+# WVU Amateur Radio Club Equipment Inventory
+# Edit this file to update equipment information across the site
+
+radios:
+  - name: Elecraft K3s w/ P3 Panadapter
+    type: HF/50 MHz Transceiver
+
+  - name: Icom IC-9100
+    type: HF/VHF/UHF Transceiver
+
+  - name: Kenwood TM-V71a
+    type: VHF/UHF Mobile Transceiver
+
+antennas:
+  - name: Mosely TA-33 + TA-40-KR
+    description:
+      - "TA-33: 3-Element Yagi: 10, 15, 20 Meter Bands"
+      - "TA-40-KR: 40M dipole extension"
+
+  - name: SATCOM System
+    description:
+      - "1 VHF + 1 UHF Yagi, many elements"
+      - "Yaesu Rotator"
+      - "Automation System ran on Raspberry Pi 4B"
+
+repeaters:
+  - name: Yaesu DR-2X 144/440 Analog/Fusion Repeater
+    frequency: 146.760MHz
+    offset: "-600kHz"
+    tone: "PL: 103.5"
+
+  - name: Yaesu DR-2X 144/440 Analog/Fusion Repeater
+    frequency: 444.800MHz
+    offset: "+5.0MHz"
+    tone: "PL: 103.5"
+
+  - name: Motorola XPR8400 440 DMR Repeater
+    frequency: 440.6375MHz
+    offset: "-600kHz"
+    tone: "CC: 1"
+
+  - name: Alinco DR-1200 + Raspberry Pi 3b Digipeater
+    frequency: 144.390MHz
+    offset: "NONE"
+    tone: "NONE"
+
+test_equipment:
+  - name: Tektronix TDS1012B Oscilloscope
+
+  - name: Topward 6302D DC Power Supply
+
+  - name: Fluke 289 Multimeter
+
+retired:
+  - name: Heathkit SB101
+    type: HF Transceiver
+
+  - name: Heathkit HD1410
+    type: Iambic CW Key
+
+  - name: Heathkit SB600 Speaker
+    type: External Speaker for SB101
+
+  - name: Kenwood TS-520SE
+    type: HF Transceiver
+
+  - name: Kenwood TS-520
+    type: HF Transceiver
+
+  - name: Kenwood VFO-240
+    type: External VFO for TS-520SE
+
+  - name: Kenwood SP-230
+    type: External Speaker for TS-520SE
+
+  - name: 2m Analog Repeater
+    type: Built by Dr. Roy Nutter, N8BHI

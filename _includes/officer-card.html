@@ -1,0 +1,30 @@
+{% comment %}
+Officer Card Include
+Usage: {% include officer-card.html officer=officer %}
+{% endcomment %}
+
+<div class="col-md-6 col-lg-4 mb-4">
+    <div class="card h-100">
+        <a href="/officers/{{ include.officer.id }}/" class="text-decoration-none">
+            <img src="/assets/officers/{{ include.officer.image }}"
+                 class="card-img-top"
+                 alt="Portrait of {{ include.officer.title }}">
+        </a>
+        <div class="card-body">
+            <h3 class="card-title h5">
+                <a href="/officers/{{ include.officer.id }}/" class="text-decoration-none text-wvu-blue">
+                    {{ include.officer.name }}
+                </a>
+            </h3>
+            <p class="card-text text-muted mb-1">{{ include.officer.title }}</p>
+            {% if include.officer.callsign != "" %}
+            <p class="card-text">
+                <span class="iowan-old-style-black-italic">{{ include.officer.callsign }}{% if include.officer.license_class != "" %}, {{ include.officer.license_class }}{% endif %}</span>
+            </p>
+            {% endif %}
+        </div>
+        <div class="card-footer bg-transparent">
+            <a href="/officers/{{ include.officer.id }}/" class="btn btn-outline-wvu-blue btn-sm">View Profile</a>
+        </div>
+    </div>
+</div>

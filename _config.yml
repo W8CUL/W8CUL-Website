@@ -1,0 +1,41 @@
+# Site settings
+title: WVU Amateur Radio Club
+callsign: W8CUL
+description: Official website of the WVU Amateur Radio Club - W8CUL
+url: https://w8cul.github.io
+baseurl: ""
+
+# Contact information
+email: wvuarc@gmail.com
+address:
+  street: 1220 Evansdale Drive
+  po_box: PO Box 6109
+  city: Morgantown
+  state: West Virginia
+  zip: 26506-6109
+
+# Social links
+social:
+  discord: https://discord.gg/mnHW67hShz
+  instagram: https://www.instagram.com/w8cul
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - processDates.sh
+  - node_modules
+  - vendor
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"

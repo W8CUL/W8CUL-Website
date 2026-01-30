@@ -56,9 +56,9 @@ Then visit `http://localhost:4000`
 
 ## Enabling Jekyll on Cloudflare Pages
 
-If you have access to the Cloudflare Pages dashboard, you can enable automatic Jekyll builds:
+Enable automatic Jekyll builds:
 
-1. Go to your Cloudflare Pages project settings
+1. Go to Cloudflare Pages project settings
 2. Under **Build settings**, configure:
    - **Build command:** `bundle exec jekyll build`
    - **Build output directory:** `_site`

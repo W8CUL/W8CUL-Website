@@ -30,6 +30,8 @@ NREUM.info = {
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+<!-- WVU Navigation -->
+<script src="/javascripts/1756389273/meom-wvu-site-navigation--custom.js" type="module"></script>
 </head>
 <body class="page--events">
 
@@ -378,36 +380,7 @@ const wvuEmergencyAlert = (() => {
 </script>
 
 <script>
-/* Navigation toggle */
-const wvuNav = (() => {
-    'use strict';
-    const toggle = document.querySelector('.js-wvu-site-nav-toggle');
-    const menu = document.querySelector('.js-wvu-site-nav-items');
-    const toggleText = document.querySelector('.js-wvu-site-nav-toggle-text');
 
-    if (toggle) {
-        toggle.addEventListener('click', () => {
-            const expanded = toggle.getAttribute('aria-expanded') === 'true';
-            toggle.setAttribute('aria-expanded', !expanded);
-            menu.classList.toggle('show');
-            toggleText.textContent = expanded ? 'Open Menu' : 'Close Menu';
-        });
-    }
-})();
-</script>
-
-<script>
-/* Last commit date */
-fetch('https://api.github.com/repos/W8CUL/W8CUL-Website/commits?per_page=1')
-    .then(response => response.json())
-    .then(data => {
-        if (data[0] && data[0].commit && data[0].commit.author.date) {
-            const date = new Date(data[0].commit.author.date);
-            document.getElementById('git-last-commit-date').textContent = date.toLocaleDateString();
-        }
-    })
-    .catch(error => console.log('Could not fetch last commit date'));
-</script>
 
 </body>
 </html>

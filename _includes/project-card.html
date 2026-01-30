@@ -1,0 +1,28 @@
+{% comment %}
+Project Card Include
+Usage: {% include project-card.html project=project %}
+{% endcomment %}
+
+<div class="col-md-6 col-lg-4 mb-4">
+    <div class="card h-100">
+        <div class="card-body">
+            <h3 class="card-title h5">
+                <a href="{{ include.project.link }}" class="text-decoration-none text-wvu-blue">
+                    {{ include.project.name }}
+                </a>
+            </h3>
+            <p class="card-text text-muted small mb-2">{{ include.project.years }}</p>
+            <p class="card-text">{{ include.project.description }}</p>
+            {% if include.project.tags.size > 0 %}
+            <div class="mb-2">
+                {% for tag in include.project.tags %}
+                <span class="badge bg-wvu-gold text-dark">{{ tag }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        <div class="card-footer bg-transparent">
+            <a href="{{ include.project.link }}" class="btn btn-outline-wvu-blue btn-sm">Learn More</a>
+        </div>
+    </div>
+</div>

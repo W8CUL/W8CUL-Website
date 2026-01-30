@@ -1,0 +1,20 @@
+{% comment %}
+Officer Sidebar Navigation Include
+Usage: {% include officer-sidebar.html current_id=page.officer_id %}
+{% endcomment %}
+
+<aside class="wvu-sidebar col-xl-3 mt-4 mt-md-0" aria-label="Officer Navigation">
+    <div class="sticky-top pt-3 mt-n3">
+        <div class="mb-3">
+            <ul class="nav flex-column border-start border-muted ps-1 mb-3">
+                {% for officer in site.data.officers %}
+                <li class="nav-item">
+                    <a class="nav-link text-decoration-none{% if include.current_id == officer.id %} active{% endif %}"
+                       {% if include.current_id == officer.id %}aria-current="page"{% endif %}
+                       href="/officers/{{ officer.id }}/">{{ officer.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</aside>

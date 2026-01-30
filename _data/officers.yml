@@ -1,0 +1,152 @@
+# WVU Amateur Radio Club Officers
+# Edit this file to update officer information across the entire site
+
+- id: faculty-advisor
+  name: Dr. Matthew Valenti
+  title: Faculty Advisor
+  callsign: KC8NHN
+  license_class: ""
+  email: matthew.valenti@mail.wvu.edu
+  phone: "(304) 293-9139"
+  office: 361 Advanced Engineering Research Building
+  major: ""
+  image: Valenti-290x290.jpeg
+  bio: >
+    Dr. Valenti has been a part of the radio club for over 25 years and has expertise in numerous RF systems.
+  order: 1
+
+- id: president
+  name: Aidan Kern
+  title: President
+  callsign: N3AMK
+  license_class: General
+  email: wvuarc+president@gmail.com
+  major: Electrical Engineering & Computer Engineering
+  image: president.jpg
+  bio: >
+    Aidan is a 3rd-Generation Ham, where his Dad, Grandma, and Grandpa are all licensed!
+    He currently holds a General Class License. He is a commuter student and is involved
+    in many fields both on and off campus, including playing saxophone for the Pride of
+    West Virginia and acting as the Student Engineer for the University radio station, U92.
+  order: 2
+
+- id: vice-president
+  name: Reilly Wolfe
+  title: Vice President
+  callsign: WV8RQW
+  license_class: Technician
+  email: wvuarc+vicepresident@gmail.com
+  major: Electrical Engineering
+  image: vice-president.png
+  bio: ""
+  order: 3
+
+- id: secretary
+  name: Ryan DiBacco
+  title: Secretary
+  callsign: KF8ADH
+  license_class: ""
+  email: wvuarc+secretary@gmail.com
+  major: Electrical Engineering
+  image: secretary.jpg
+  bio: ""
+  order: 4
+
+- id: treasurer
+  name: Corey Kinder
+  title: Treasurer
+  callsign: W8TES
+  license_class: Amateur Extra
+  email: wvuarc+treasurer@gmail.com
+  major: History
+  image: placeholder.jpg
+  bio: ""
+  order: 5
+
+- id: shack-manager
+  name: Koh Onishi
+  title: Shack Manager
+  callsign: KF8DKS
+  license_class: ""
+  email: wvuarc+shack@gmail.com
+  major: Cybersecurity
+  image: placeholder.jpg
+  bio: ""
+  order: 6
+
+- id: activities-manager
+  name: Jeremy Raugh
+  title: Activities Manager
+  callsign: KE8WZW
+  license_class: ""
+  email: wvuarc+activities@gmail.com
+  major: Engineering Technology
+  image: activities-manager.jpg
+  bio: ""
+  order: 7
+
+- id: communications-director
+  name: Serena Huber
+  title: Communications Director
+  callsign: KR4DFE
+  license_class: ""
+  email: wvuarc+communications@gmail.com
+  major: Marketing
+  image: placeholder.jpg
+  bio: ""
+  order: 8
+
+- id: qsl-manager
+  name: Brent Harper
+  title: QSL Manager
+  callsign: KQ4LDS
+  license_class: ""
+  email: wvuarc+qsl@gmail.com
+  major: Computer Science
+  image: qsl-manager.jpg
+  bio: ""
+  order: 9
+
+- id: emcomm-coordinator
+  name: Emcomm Coordinator
+  title: Emcomm Coordinator
+  callsign: ""
+  license_class: ""
+  email: wvuarc+emcomm@gmail.com
+  major: ""
+  image: placeholder.jpg
+  bio: ""
+  order: 10
+
+- id: webmaster
+  name: Webmaster
+  title: Webmaster
+  callsign: ""
+  license_class: ""
+  email: wvuarc+webmaster@gmail.com
+  major: ""
+  image: placeholder.jpg
+  bio: ""
+  order: 11
+
+- id: ve-coordinator
+  name: VE Coordinator
+  title: VE Coordinator
+  callsign: ""
+  license_class: ""
+  email: wvuarc+ve@gmail.com
+  major: ""
+  image: placeholder.jpg
+  bio: ""
+  order: 12
+
+- id: secdef
+  name: Secretary of Defense
+  title: Secretary of Defense
+  callsign: ""
+  license_class: ""
+  email: wvuarc+secdef@gmail.com
+  major: ""
+  image: placeholder.jpg
+  bio: ""
+  order: 13

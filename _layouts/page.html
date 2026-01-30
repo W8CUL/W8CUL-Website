@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% if page.breadcrumbs %}
+<div class="">
+    <section class="wvu-breadcrumbs py-2 w-100 wvu-z-index-breadcrumbs" aria-label="Breadcrumb Links">
+        <div class="container position-relative wvu-z-index-content small">
+            <div class="text-wvu-neutral--dark-gray text-wvu-accent--blue-dark d-inline-block">
+                <ul class="wvu-z-index-content wvu-slash-list ps-0 mb-0 d-inline-block">
+                    <li><a href="/">Home</a></li>
+                    {% for crumb in page.breadcrumbs %}
+                    {% if forloop.last %}
+                    <li class="active">{{ crumb.title }}</li>
+                    {% else %}
+                    <li><a href="{{ crumb.url }}">{{ crumb.title }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+{% endif %}
+
+<main id="wvu-main-content" class="py-5">
+    <div class="container wvu-z-index-content">
+        {{ content }}
+    </div>
+</main>

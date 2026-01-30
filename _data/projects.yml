@@ -9,7 +9,7 @@
     - Radio
   description: >
     Launching Weather Balloons with various scientific and radio-based payloads!
-  link: /projects/Balloon_Project/Balloon_Project.html
+  link: /projects/Balloon_Project/Balloon_Project/
   status: active
 
 - id: aprs-tracker
@@ -20,5 +20,5 @@
     - GPS
   description: >
     An in-house designed TNC kit to turn a Baofeng into an APRS Tracker!
-  link: /projects/APRS_Tracker/APRS_Tracker.html
+  link: /projects/APRS_Tracker/APRS_Tracker/
   status: active

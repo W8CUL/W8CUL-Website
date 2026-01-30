@@ -19,9 +19,9 @@ main:
     url: /projects/
     children:
       - title: Balloon Project
-        url: /projects/Balloon_Project/Balloon_Project.html
+        url: /projects/Balloon_Project/Balloon_Project/
       - title: APRS Tracker
-        url: /projects/APRS_Tracker/APRS_Tracker.html
+        url: /projects/APRS_Tracker/APRS_Tracker/
 
   - title: The Shack
     url: /shack/

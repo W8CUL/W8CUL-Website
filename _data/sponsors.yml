@@ -1,0 +1,89 @@
+# WVU Amateur Radio Club Sponsors
+# Edit this file to update sponsor information
+
+tiers:
+  - id: platinum
+    name: Platinum Sponsors
+    description: Major supporters of the WVU Amateur Radio Club
+    min_amount: 1000
+
+  - id: gold
+    name: Gold Sponsors
+    description: Significant contributors to our programs
+    min_amount: 500
+
+  - id: silver
+    name: Silver Sponsors
+    description: Valued supporters of our activities
+    min_amount: 100
+
+  - id: equipment
+    name: Equipment Donors
+    description: Organizations and individuals who have donated equipment
+
+sponsors:
+  # Platinum Sponsors
+  - id: wvu-engineering
+    name: WVU Statler College of Engineering
+    tier: platinum
+    logo: /assets/sponsors/wvu-statler.png
+    url: https://statler.wvu.edu/
+    description: Primary institutional support for the club
+
+  # Gold Sponsors
+  - id: arrl-foundation
+    name: ARRL Foundation
+    tier: gold
+    logo: /assets/sponsors/arrl.png
+    url: https://www.arrl.org/the-arrl-foundation
+    description: Grant support for educational programs
+
+  # Silver Sponsors
+  - id: dxengineering
+    name: DX Engineering
+    tier: silver
+    logo: /assets/sponsors/dxengineering.png
+    url: https://www.dxengineering.com/
+    description: Discount partner for club equipment purchases
+
+  - id: gigaparts
+    name: GigaParts
+    tier: silver
+    logo: /assets/sponsors/gigaparts.png
+    url: https://www.gigaparts.com/
+    description: Amateur radio equipment supplier
+
+# Equipment Donors
+equipment_donors:
+  - name: Dr. Matthew Valenti (KC8NHN)
+    donation: Yaesu FT-991A Transceiver
+    year: 2024
+
+  - name: Morgantown ARC
+    donation: Various antenna equipment
+    year: 2023
+
+  - name: WV ARRL Section
+    donation: Study materials and books
+    year: 2023
+
+  - name: Anonymous Donor
+    donation: RTL-SDR kits for education
+    year: 2024
+
+# Sponsorship information
+sponsorship_info:
+  contact_email: wvuarc+sponsors@gmail.com
+  benefits:
+    platinum:
+      - Logo on website homepage
+      - Recognition at all club events
+      - Named sponsorship of major events
+      - Social media recognition
+    gold:
+      - Logo on sponsors page
+      - Recognition at club meetings
+      - Social media mentions
+    silver:
+      - Name listing on sponsors page
+      - Thank you in club newsletter

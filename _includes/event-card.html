@@ -1,0 +1,53 @@
+{% comment %}
+Event Card Include
+Usage: {% include event-card.html event=event recurring=false %}
+{% endcomment %}
+
+<div class="card h-100 event-card {% if include.event.type %}event-type-{{ include.event.type }}{% endif %}" {% if include.event.type %}data-event-type="{{ include.event.type }}"{% endif %}>
+    <div class="card-body">
+        <div class="d-flex justify-content-between align-items-start mb-2">
+            <h3 class="card-title h5 mb-0">{{ include.event.name }}</h3>
+            {% if include.event.type and site.data.events.event_types[include.event.type] %}
+            <span class="badge bg-{{ site.data.events.event_types[include.event.type].color }} text-{% if site.data.events.event_types[include.event.type].color == 'wvu-gold' %}dark{% else %}white{% endif %}">
+                <span class="fa-solid {{ site.data.events.event_types[include.event.type].icon }}" aria-hidden="true"></span>
+                {{ site.data.events.event_types[include.event.type].label }}
+            </span>
+            {% endif %}
+        </div>
+
+        {% if include.recurring %}
+        <p class="card-text mb-1">
+            <span class="fa-solid fa-calendar-days text-wvu-gold me-2" aria-hidden="true"></span>
+            <strong>Every {{ include.event.day }}</strong> at {{ include.event.time }}
+        </p>
+        {% else %}
+        <p class="card-text mb-1">
+            <span class="fa-solid fa-calendar-days text-wvu-gold me-2" aria-hidden="true"></span>
+            {% assign event_date = include.event.date | date: "%B %d, %Y" %}
+            {% if include.event.end_date %}
+                {% assign end_date = include.event.end_date | date: "%B %d, %Y" %}
+                <strong>{{ event_date }} - {{ end_date }}</strong>
+            {% else %}
+                <strong>{{ event_date }}</strong>
+            {% endif %}
+            {% if include.event.time %} at {{ include.event.time }}{% endif %}
+        </p>
+        {% endif %}
+
+        <p class="card-text mb-2">
+            <span class="fa-solid fa-location-dot text-wvu-blue me-2" aria-hidden="true"></span>
+            {{ include.event.location }}
+        </p>
+
+        <p class="card-text text-muted">{{ include.event.description }}</p>
+    </div>
+
+    {% if include.event.link %}
+    <div class="card-footer bg-transparent border-0 pt-0">
+        <a href="{{ include.event.link }}" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+            <span class="fa-solid fa-external-link-alt me-1" aria-hidden="true"></span>
+            Learn More
+        </a>
+    </div>
+    {% endif %}
+</div>

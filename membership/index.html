@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="/assets/W8CUL.ico"/>
 <title>Members | WVU Amateur Radio Club</title>
-<meta name="description" content="Official website of the WVU Amateur Radio Club - W8CUL">
+<meta name="description" content="Join the WVU Amateur Radio Club - W8CUL and become part of our amateur radio community">
 
 <!-- New Relic Browser Monitoring -->
 <script type="text/javascript">
@@ -34,6 +34,27 @@ NREUM.info = {
     color: #fff;
     font-weight: 600;
     border-bottom: 2px solid var(--bs-wvu-gold);
+}
+.benefit-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.benefit-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+.quick-link-card {
+    transition: transform 0.2s ease;
+    border-left: 4px solid var(--bs-wvu-gold);
+}
+.quick-link-card:hover {
+    transform: translateX(5px);
+}
+.testimonial-card {
+    border-left: 4px solid var(--bs-wvu-gold);
+    background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+}
+.hero-section {
+    background: linear-gradient(135deg, var(--bs-wvu-blue) 0%, #1C2B39 100%);
 }
 </style>
 
@@ -118,120 +139,120 @@ NREUM.info = {
 
             <ul id="wvu-site-nav__items"
                 class="wvu-site-nav__items js-wvu-site-nav-items position-static list-unstyled d-lg-flex align-items-lg-center flex-lg-wrap mb-0">
-                
-                
+
+
                 <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/">Home</a></li>
-                
-                
-                
+
+
+
                 <li class="wvu-site-nav__menu-item-has-children position-relative d-lg-flex">
                     <a class="nav-link px-1 py-2 fw-normal flex-grow-1 active"
                        aria-current="page"
                        href="/membership/">Members</a>
                     <ul class="wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0 wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0--level-1">
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/membership/join/">Join</a></li>
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/membership/resources/">Resources</a></li>
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/membership/alumni/">Alumni</a></li>
-                        
+
                     </ul>
                 </li>
-                
-                
-                
+
+
+
                 <li class="wvu-site-nav__menu-item-has-children position-relative d-lg-flex">
                     <a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/projects/">Projects</a>
                     <ul class="wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0 wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0--level-1">
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/projects/Balloon_Project/Balloon_Project/">Balloon Project</a></li>
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/projects/APRS_Tracker/APRS_Tracker/">APRS Tracker</a></li>
-                        
+
                     </ul>
                 </li>
-                
-                
-                
+
+
+
                 <li class="wvu-site-nav__menu-item-has-children position-relative d-lg-flex">
                     <a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/shack/">The Shack</a>
                     <ul class="wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0 wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0--level-1">
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/shack/equipment/">Equipment</a></li>
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="https://wvuarc.statler.wvu.edu/hamclock/" target="_blank" rel="noopener">Hamclock</a></li>
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/shack/logbook/">QSL Logbook</a></li>
-                        
+
                     </ul>
                 </li>
-                
-                
-                
+
+
+
                 <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/events/">Events</a></li>
-                
-                
-                
+
+
+
                 <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/licensing/">Licensing</a></li>
-                
-                
-                
+
+
+
                 <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/officers/">Officers</a></li>
-                
-                
-                
+
+
+
                 <li class="wvu-site-nav__menu-item-has-children position-relative d-lg-flex">
                     <a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/sponsors/">Sponsors</a>
                     <ul class="wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0 wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0--level-1">
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/sponsors/donate/">Donate</a></li>
-                        
+
                     </ul>
                 </li>
-                
-                
+
+
             </ul>
 
             <!-- Social Links -->
             <div class="d-flex align-items-center">
                 <ul class="list-inline mb-0 me-2">
-                    
+
                     <li class="list-inline-item">
                         <a class="mb-0 text-decoration-none text-white-50" href="https://discord.gg/mnHW67hShz">
                             <span class="fab fa-discord"></span><span class="visually-hidden">Discord</span>
                         </a>
                     </li>
-                    
+
                     <li class="list-inline-item">
                         <a class="mb-0 text-decoration-none text-white-50" href="https://www.instagram.com/w8cul">
                             <span class="fab fa-instagram"></span><span class="visually-hidden">Instagram</span>
                         </a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -248,11 +269,26 @@ NREUM.info = {
   </div>
 </section>
 
-<div class="py-3 wvu-z-index-content pb-3 bg-wvu-neutral--dark-gray bg-wvu-accent--blue-dark wvu-bg-vignetting wvu-bg-position-center">
+<!-- Hero Section -->
+<div class="hero-section py-5 wvu-z-index-content text-white">
   <div class="container position-relative wvu-z-index-content">
-    <div class="row align-items-stretch">
-      <div class="col-12 col-md-8 mt-3">
-        <h1 id="backpage-header-1-label" class="display-4 helvetica-neue-bold mb-0 text-white">Members</h1>
+    <div class="row align-items-center py-4">
+      <div class="col-lg-7">
+        <h1 class="display-4 helvetica-neue-bold mb-3">Join the W8CUL Community</h1>
+        <p class="lead mb-4">Whether you're a seasoned ham or just curious about radio, W8CUL welcomes you. Experience hands-on learning, make lifelong connections, and explore the exciting world of amateur radio.</p>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="/membership/join/" class="btn btn-wvu-gold btn-lg text-dark">
+            <span class="fa-solid fa-user-plus me-2" aria-hidden="true"></span>
+            Join Today
+          </a>
+          <a href="/events/" class="btn btn-outline-light btn-lg">
+            <span class="fa-solid fa-calendar me-2" aria-hidden="true"></span>
+            Upcoming Events
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-5 text-center mt-4 mt-lg-0">
+        <span class="fa-solid fa-satellite-dish fa-8x text-wvu-gold opacity-75" aria-hidden="true"></span>
       </div>
     </div>
   </div>
@@ -260,7 +296,283 @@ NREUM.info = {
 
 <main id="wvu-main-content" class="py-5">
   <div class="container">
-    <p class="lead">This page is under construction. Check back soon!</p>
+
+    <!-- Quick Links Grid -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-link text-wvu-gold me-2" aria-hidden="true"></span>
+        Quick Links
+      </h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <a href="/membership/join/" class="text-decoration-none">
+            <div class="card h-100 quick-link-card">
+              <div class="card-body d-flex align-items-center">
+                <span class="fa-solid fa-user-plus fa-2x text-wvu-blue me-3" aria-hidden="true"></span>
+                <div>
+                  <h3 class="h5 mb-1 text-wvu-blue">Join the Club</h3>
+                  <p class="mb-0 text-muted small">Become a W8CUL member</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="/membership/resources/" class="text-decoration-none">
+            <div class="card h-100 quick-link-card">
+              <div class="card-body d-flex align-items-center">
+                <span class="fa-solid fa-book-open fa-2x text-wvu-blue me-3" aria-hidden="true"></span>
+                <div>
+                  <h3 class="h5 mb-1 text-wvu-blue">Member Resources</h3>
+                  <p class="mb-0 text-muted small">Study materials, software, docs</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="/membership/alumni/" class="text-decoration-none">
+            <div class="card h-100 quick-link-card">
+              <div class="card-body d-flex align-items-center">
+                <span class="fa-solid fa-graduation-cap fa-2x text-wvu-blue me-3" aria-hidden="true"></span>
+                <div>
+                  <h3 class="h5 mb-1 text-wvu-blue">Alumni Network</h3>
+                  <p class="mb-0 text-muted small">Stay connected after graduation</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Membership Benefits -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-star text-wvu-gold me-2" aria-hidden="true"></span>
+        Membership Benefits
+      </h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 benefit-card text-center">
+            <div class="card-body">
+              <div class="rounded-circle bg-wvu-blue text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                <span class="fa-solid fa-radio fa-2x" aria-hidden="true"></span>
+              </div>
+              <h3 class="h5">Shack Access</h3>
+              <p class="text-muted small mb-0">Use our fully-equipped radio station with HF, VHF, and UHF capabilities in ESB 529.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 benefit-card text-center">
+            <div class="card-body">
+              <div class="rounded-circle bg-wvu-gold text-dark d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                <span class="fa-solid fa-book fa-2x" aria-hidden="true"></span>
+              </div>
+              <h3 class="h5">License Training</h3>
+              <p class="text-muted small mb-0">Free study sessions and VE testing to help you earn your amateur radio license.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 benefit-card text-center">
+            <div class="card-body">
+              <div class="rounded-circle bg-wvu-blue text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                <span class="fa-solid fa-users fa-2x" aria-hidden="true"></span>
+              </div>
+              <h3 class="h5">Community</h3>
+              <p class="text-muted small mb-0">Connect with fellow radio enthusiasts, from beginners to experienced operators.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 benefit-card text-center">
+            <div class="card-body">
+              <div class="rounded-circle bg-wvu-gold text-dark d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                <span class="fa-solid fa-rocket fa-2x" aria-hidden="true"></span>
+              </div>
+              <h3 class="h5">Projects</h3>
+              <p class="text-muted small mb-0">Participate in hands-on projects like balloon launches, APRS trackers, and more.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 benefit-card text-center">
+            <div class="card-body">
+              <div class="rounded-circle bg-wvu-blue text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                <span class="fa-solid fa-trophy fa-2x" aria-hidden="true"></span>
+              </div>
+              <h3 class="h5">Contests</h3>
+              <p class="text-muted small mb-0">Compete in amateur radio contests and represent WVU in Field Day events.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 benefit-card text-center">
+            <div class="card-body">
+              <div class="rounded-circle bg-wvu-gold text-dark d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                <span class="fa-solid fa-briefcase fa-2x" aria-hidden="true"></span>
+              </div>
+              <h3 class="h5">Career Skills</h3>
+              <p class="text-muted small mb-0">Develop technical skills and networking connections valued by employers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Member Testimonial -->
+    <section class="mb-5">
+      <div class="card testimonial-card">
+        <div class="card-body py-4">
+          <div class="row align-items-center">
+            <div class="col-md-2 text-center mb-3 mb-md-0">
+              <span class="fa-solid fa-quote-left fa-4x text-wvu-gold opacity-50" aria-hidden="true"></span>
+            </div>
+            <div class="col-md-10">
+              <blockquote class="mb-0">
+                <p class="lead mb-2">"Joining W8CUL was the best decision I made at WVU. I came in knowing nothing about radio, and now I have my General license and have made contacts with stations around the world. The club is incredibly welcoming to newcomers."</p>
+                <footer class="text-muted">
+                  <strong>Aidan K. (N3AMK)</strong> - Club President, Electrical Engineering
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="row">
+      <!-- Discord Widget Section -->
+      <div class="col-lg-6 mb-5">
+        <section>
+          <h2 class="h3 mb-4">
+            <span class="fa-brands fa-discord text-wvu-gold me-2" aria-hidden="true"></span>
+            Join Our Discord
+          </h2>
+          <p class="text-muted mb-3">Stay connected with club members, ask questions, and get announcements in real-time.</p>
+          <iframe src="https://discord.com/widget?id=1074177298970394765&theme=dark"
+                  width="100%"
+                  height="400"
+                  allowtransparency="true"
+                  frameborder="0"
+                  sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                  title="W8CUL Discord Server Widget">
+          </iframe>
+          <p class="mt-2 small text-muted">
+            <a href="https://discord.gg/mnHW67hShz" target="_blank" rel="noopener" class="text-wvu-blue">
+              <span class="fa-solid fa-external-link-alt me-1" aria-hidden="true"></span>
+              Open Discord in new window
+            </a>
+          </p>
+        </section>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="col-lg-6 mb-5">
+        <section>
+          <h2 class="h3 mb-4">
+            <span class="fa-solid fa-circle-question text-wvu-gold me-2" aria-hidden="true"></span>
+            Frequently Asked Questions
+          </h2>
+          <div class="accordion" id="membershipFAQ">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                  Do I need a license to join?
+                </button>
+              </h3>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#membershipFAQ">
+                <div class="accordion-body">
+                  <strong>No!</strong> You don't need a ham radio license to join W8CUL. Many of our members join while working toward their license. We offer study sessions every Thursday to help you prepare.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                  Who can join the club?
+                </button>
+              </h3>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#membershipFAQ">
+                <div class="accordion-body">
+                  W8CUL is open to all WVU students, faculty, staff, and community members. Whether you're pursuing a degree in engineering or English, radio enthusiasts of all backgrounds are welcome!
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                  How much does membership cost?
+                </button>
+              </h3>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#membershipFAQ">
+                <div class="accordion-body">
+                  Membership is free for WVU students! Community members can participate in our events and meetings as well. We're a student organization funded through WVU.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                  When and where do you meet?
+                </button>
+              </h3>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#membershipFAQ">
+                <div class="accordion-body">
+                  We meet every <strong>Tuesday at 7:00 PM</strong> in ESB 529 (The Shack) on the Evansdale campus. Study sessions are held <strong>Thursday at 6:00 PM</strong> in the same location. Check our <a href="/events/">events page</a> for special events.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                  Do I need to buy equipment?
+                </button>
+              </h3>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#membershipFAQ">
+                <div class="accordion-body">
+                  No! Our shack is fully equipped with radios, antennas, and all the gear you need. Members can use club equipment to operate on HF, VHF, and UHF bands. If you want your own handheld radio, basic models start around $25.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                  What if I know nothing about radio?
+                </button>
+              </h3>
+              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#membershipFAQ">
+                <div class="accordion-body">
+                  That's completely fine! Many of our members started with zero radio experience. We have experienced hams who love teaching newcomers, and our study sessions are designed for beginners. Just show up with curiosity!
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="text-center py-5 bg-light rounded">
+      <h2 class="h3 mb-3">Ready to Get Started?</h2>
+      <p class="text-muted mb-4">Join W8CUL today and become part of our amateur radio community!</p>
+      <a href="/membership/join/" class="btn btn-wvu-blue btn-lg me-2">
+        <span class="fa-solid fa-user-plus me-1" aria-hidden="true"></span>
+        Join the Club
+      </a>
+      <a href="/contact/" class="btn btn-outline-wvu-blue btn-lg">
+        <span class="fa-solid fa-envelope me-1" aria-hidden="true"></span>
+        Contact Us
+      </a>
+    </section>
+
   </div>
 </main>
 
@@ -388,9 +700,6 @@ const wvuEmergencyAlert = (() => {
     fetchEmergencyAlert();
 })();
 </script>
-
-<script>
-
 
 </body>
 </html>

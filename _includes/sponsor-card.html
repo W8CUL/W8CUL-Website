@@ -1,0 +1,30 @@
+{% comment %}
+Sponsor Card Include
+Usage: {% include sponsor-card.html sponsor=sponsor %}
+{% endcomment %}
+
+<div class="col-md-6 col-lg-4 mb-4">
+    <div class="card h-100 sponsor-card">
+        <div class="card-body text-center">
+            {% if include.sponsor.logo %}
+            <img src="{{ include.sponsor.logo }}" alt="{{ include.sponsor.name }} logo" class="img-fluid mb-3" style="max-height: 80px;">
+            {% else %}
+            <div class="bg-light rounded p-3 mb-3 d-inline-block">
+                <span class="fa-solid fa-building fa-3x text-muted" aria-hidden="true"></span>
+            </div>
+            {% endif %}
+            <h3 class="card-title h5">{{ include.sponsor.name }}</h3>
+            {% if include.sponsor.description %}
+            <p class="card-text text-muted small">{{ include.sponsor.description }}</p>
+            {% endif %}
+        </div>
+        {% if include.sponsor.url %}
+        <div class="card-footer bg-transparent text-center">
+            <a href="{{ include.sponsor.url }}" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                <span class="fa-solid fa-external-link-alt me-1" aria-hidden="true"></span>
+                Visit Website
+            </a>
+        </div>
+        {% endif %}
+    </div>
+</div>

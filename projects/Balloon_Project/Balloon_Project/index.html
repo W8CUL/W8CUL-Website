@@ -35,6 +35,49 @@ NREUM.info = {
     font-weight: 600;
     border-bottom: 2px solid var(--bs-wvu-gold);
 }
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, var(--bs-wvu-gold) 0%, var(--bs-wvu-blue) 100%);
+}
+.timeline-item {
+    position: relative;
+    padding-bottom: 2rem;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--bs-wvu-gold);
+    border: 2px solid var(--bs-wvu-blue);
+}
+.spec-card {
+    transition: transform 0.2s ease;
+    border-left: 4px solid var(--bs-wvu-gold);
+}
+.spec-card:hover {
+    transform: translateX(5px);
+}
+.photo-thumbnail {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.photo-thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
 </style>
 
 <!-- Font Awesome -->
@@ -261,7 +304,471 @@ NREUM.info = {
 
 <main id="wvu-main-content" class="py-5">
   <div class="container">
-    <p class="lead">Launching weather balloons with scientific and radio-based payloads. This page is under construction—check back soon for more details!</p>
+
+    <!-- Project Overview -->
+    <section class="mb-5">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <p class="lead">The W8CUL High-Altitude Balloon (HAB) Project combines amateur radio, atmospheric science, and hands-on engineering to launch payloads to the edge of space.</p>
+          <p>Our balloons reach altitudes of 100,000+ feet, capturing stunning imagery and valuable scientific data while providing real-world experience in radio tracking, payload design, and recovery operations.</p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <div class="bg-wvu-blue text-white rounded p-4">
+            <span class="fa-solid fa-rocket fa-4x mb-3" aria-hidden="true"></span>
+            <h2 class="h4 mb-2">Peak Altitude</h2>
+            <p class="display-6 mb-0">108,547 ft</p>
+            <p class="small mb-0">Spring 2024 Launch</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Goals -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-bullseye text-wvu-gold me-2" aria-hidden="true"></span>
+        Project Goals
+      </h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 text-center border-0 shadow-sm">
+            <div class="card-body">
+              <div class="rounded-circle bg-wvu-gold text-dark d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                <span class="fa-solid fa-graduation-cap fa-xl" aria-hidden="true"></span>
+              </div>
+              <h3 class="h6">Education</h3>
+              <p class="small text-muted mb-0">Provide hands-on experience in radio communications, electronics, and atmospheric science</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 text-center border-0 shadow-sm">
+            <div class="card-body">
+              <div class="rounded-circle bg-wvu-blue text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                <span class="fa-solid fa-satellite-dish fa-xl" aria-hidden="true"></span>
+              </div>
+              <h3 class="h6">Radio Skills</h3>
+              <p class="small text-muted mb-0">Practice APRS tracking, direction finding, and real-time telemetry decoding</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 text-center border-0 shadow-sm">
+            <div class="card-body">
+              <div class="rounded-circle bg-wvu-gold text-dark d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                <span class="fa-solid fa-flask fa-xl" aria-hidden="true"></span>
+              </div>
+              <h3 class="h6">Research</h3>
+              <p class="small text-muted mb-0">Conduct atmospheric measurements and test experimental payloads</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 text-center border-0 shadow-sm">
+            <div class="card-body">
+              <div class="rounded-circle bg-wvu-blue text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                <span class="fa-solid fa-users fa-xl" aria-hidden="true"></span>
+              </div>
+              <h3 class="h6">Outreach</h3>
+              <p class="small text-muted mb-0">Engage the WVU community and inspire interest in STEM and amateur radio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-microchip text-wvu-gold me-2" aria-hidden="true"></span>
+        Technical Specifications
+      </h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card spec-card h-100">
+            <div class="card-body">
+              <h3 class="h5 text-wvu-blue">
+                <span class="fa-solid fa-circle me-2" aria-hidden="true"></span>
+                Balloon System
+              </h3>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><strong>Balloon:</strong> Kaymont KCI 1200g latex</li>
+                <li class="mb-2"><strong>Lift Gas:</strong> Hydrogen or Helium</li>
+                <li class="mb-2"><strong>Neck Lift:</strong> ~1800g</li>
+                <li class="mb-2"><strong>Ascent Rate:</strong> ~5 m/s target</li>
+                <li class="mb-2"><strong>Burst Altitude:</strong> 90,000 - 110,000 ft</li>
+                <li><strong>Parachute:</strong> 48" rip-stop nylon</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card spec-card h-100">
+            <div class="card-body">
+              <h3 class="h5 text-wvu-blue">
+                <span class="fa-solid fa-broadcast-tower me-2" aria-hidden="true"></span>
+                Tracking System
+              </h3>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><strong>Primary:</strong> APRS on 144.390 MHz</li>
+                <li class="mb-2"><strong>Tracker:</strong> W8CUL TNC Kit + Baofeng UV-5R</li>
+                <li class="mb-2"><strong>Backup:</strong> Spot Trace satellite tracker</li>
+                <li class="mb-2"><strong>Telemetry:</strong> GPS, altitude, temperature, voltage</li>
+                <li class="mb-2"><strong>TX Power:</strong> 5W</li>
+                <li><strong>Antenna:</strong> Quarter-wave ground plane</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card spec-card h-100">
+            <div class="card-body">
+              <h3 class="h5 text-wvu-blue">
+                <span class="fa-solid fa-camera me-2" aria-hidden="true"></span>
+                Imaging Payload
+              </h3>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><strong>Camera:</strong> GoPro Hero 11 Black</li>
+                <li class="mb-2"><strong>Resolution:</strong> 5.3K @ 60fps</li>
+                <li class="mb-2"><strong>Interval Photos:</strong> 0.5 second timelapse</li>
+                <li class="mb-2"><strong>Storage:</strong> 256GB microSD</li>
+                <li><strong>Battery:</strong> Extended cold-weather pack</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card spec-card h-100">
+            <div class="card-body">
+              <h3 class="h5 text-wvu-blue">
+                <span class="fa-solid fa-box me-2" aria-hidden="true"></span>
+                Payload Box
+              </h3>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><strong>Material:</strong> Expanded polystyrene (EPS)</li>
+                <li class="mb-2"><strong>Dimensions:</strong> 8" x 8" x 10"</li>
+                <li class="mb-2"><strong>Weight:</strong> ~800g total payload</li>
+                <li class="mb-2"><strong>Insulation:</strong> -60°C rated</li>
+                <li><strong>Recovery:</strong> Bright orange exterior, reflective tape</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Tracking Map -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-map-location-dot text-wvu-gold me-2" aria-hidden="true"></span>
+        Live APRS Tracking
+      </h2>
+      <div class="card">
+        <div class="card-body p-0">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://aprs.fi/#!addr=Morgantown%2C%20WV"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="APRS.fi tracking map centered on Morgantown, WV">
+            </iframe>
+          </div>
+        </div>
+        <div class="card-footer bg-light">
+          <p class="mb-0 small text-muted">
+            <span class="fa-solid fa-info-circle me-1" aria-hidden="true"></span>
+            During active launches, track our balloon in real-time on <a href="https://aprs.fi/?call=W8CUL-11" target="_blank" rel="noopener">aprs.fi</a> using callsign <strong>W8CUL-11</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Launch History Timeline -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-clock-rotate-left text-wvu-gold me-2" aria-hidden="true"></span>
+        Launch History
+      </h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="h5 mb-0 text-wvu-blue">HAB-5: Spring 2024</h3>
+                <span class="badge bg-success">Successful</span>
+              </div>
+              <p class="text-muted small mb-2">April 13, 2024 | Launch Site: Morgantown Municipal Airport</p>
+              <p class="mb-2">Record-breaking flight reaching 108,547 feet. First launch with experimental atmospheric sensor package measuring ozone and UV levels.</p>
+              <ul class="list-inline mb-0 small">
+                <li class="list-inline-item"><span class="fa-solid fa-arrow-up text-success me-1"></span>108,547 ft</li>
+                <li class="list-inline-item"><span class="fa-solid fa-clock me-1"></span>2h 34m flight</li>
+                <li class="list-inline-item"><span class="fa-solid fa-location-dot me-1"></span>Recovered: Elkins, WV</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="h5 mb-0 text-wvu-blue">HAB-4: Fall 2023</h3>
+                <span class="badge bg-success">Successful</span>
+              </div>
+              <p class="text-muted small mb-2">October 21, 2023 | Launch Site: WVU Core Arboretum</p>
+              <p class="mb-2">First flight using the new W8CUL TNC tracker kit. Demonstrated reliable APRS performance at altitude with 100% packet decode rate.</p>
+              <ul class="list-inline mb-0 small">
+                <li class="list-inline-item"><span class="fa-solid fa-arrow-up text-success me-1"></span>95,230 ft</li>
+                <li class="list-inline-item"><span class="fa-solid fa-clock me-1"></span>2h 18m flight</li>
+                <li class="list-inline-item"><span class="fa-solid fa-location-dot me-1"></span>Recovered: Parsons, WV</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="h5 mb-0 text-wvu-blue">HAB-3: Spring 2023</h3>
+                <span class="badge bg-warning text-dark">Partial</span>
+              </div>
+              <p class="text-muted small mb-2">April 8, 2023 | Launch Site: Morgantown Municipal Airport</p>
+              <p class="mb-2">Early balloon burst at 72,000 ft due to manufacturing defect. All systems performed nominally. Camera recovered with excellent footage.</p>
+              <ul class="list-inline mb-0 small">
+                <li class="list-inline-item"><span class="fa-solid fa-arrow-up text-warning me-1"></span>72,410 ft</li>
+                <li class="list-inline-item"><span class="fa-solid fa-clock me-1"></span>1h 42m flight</li>
+                <li class="list-inline-item"><span class="fa-solid fa-location-dot me-1"></span>Recovered: Thomas, WV</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="h5 mb-0 text-wvu-blue">HAB-2: Fall 2022</h3>
+                <span class="badge bg-success">Successful</span>
+              </div>
+              <p class="text-muted small mb-2">September 24, 2022 | Launch Site: WVU Evansdale Campus</p>
+              <p class="mb-2">Successful test of dual-tracker redundancy system. Added cold-weather battery heating for improved reliability.</p>
+              <ul class="list-inline mb-0 small">
+                <li class="list-inline-item"><span class="fa-solid fa-arrow-up text-success me-1"></span>98,750 ft</li>
+                <li class="list-inline-item"><span class="fa-solid fa-clock me-1"></span>2h 25m flight</li>
+                <li class="list-inline-item"><span class="fa-solid fa-location-dot me-1"></span>Recovered: Aurora, WV</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="h5 mb-0 text-wvu-blue">HAB-1: Spring 2022</h3>
+                <span class="badge bg-success">Successful</span>
+              </div>
+              <p class="text-muted small mb-2">April 2, 2022 | Launch Site: Morgantown Municipal Airport</p>
+              <p class="mb-2">Inaugural W8CUL balloon launch! Basic payload with GoPro and commercial APRS tracker. Established baseline procedures for future flights.</p>
+              <ul class="list-inline mb-0 small">
+                <li class="list-inline-item"><span class="fa-solid fa-arrow-up text-success me-1"></span>89,120 ft</li>
+                <li class="list-inline-item"><span class="fa-solid fa-clock me-1"></span>2h 05m flight</li>
+                <li class="list-inline-item"><span class="fa-solid fa-location-dot me-1"></span>Recovered: Davis, WV</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-images text-wvu-gold me-2" aria-hidden="true"></span>
+        Photo Gallery
+      </h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card photo-thumbnail" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="Launch preparation - team filling balloon with helium">
+            <div class="card-body bg-light text-center py-5">
+              <span class="fa-solid fa-rocket fa-3x text-wvu-blue mb-2" aria-hidden="true"></span>
+              <p class="small mb-0">Launch Prep</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card photo-thumbnail" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="Earth's curvature visible from 100,000 feet">
+            <div class="card-body bg-light text-center py-5">
+              <span class="fa-solid fa-earth-americas fa-3x text-wvu-blue mb-2" aria-hidden="true"></span>
+              <p class="small mb-0">High Altitude</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card photo-thumbnail" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="Payload box with electronics and camera">
+            <div class="card-body bg-light text-center py-5">
+              <span class="fa-solid fa-box fa-3x text-wvu-blue mb-2" aria-hidden="true"></span>
+              <p class="small mb-0">Payload</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card photo-thumbnail" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="Team recovering payload in rural West Virginia">
+            <div class="card-body bg-light text-center py-5">
+              <span class="fa-solid fa-parachute-box fa-3x text-wvu-blue mb-2" aria-hidden="true"></span>
+              <p class="small mb-0">Recovery</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card photo-thumbnail" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="APRS tracking station setup">
+            <div class="card-body bg-light text-center py-5">
+              <span class="fa-solid fa-satellite-dish fa-3x text-wvu-blue mb-2" aria-hidden="true"></span>
+              <p class="small mb-0">Tracking</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card photo-thumbnail" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="Sunset from near-space">
+            <div class="card-body bg-light text-center py-5">
+              <span class="fa-solid fa-sun fa-3x text-wvu-gold mb-2" aria-hidden="true"></span>
+              <p class="small mb-0">Sunset View</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card photo-thumbnail" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="W8CUL tracker PCB assembly">
+            <div class="card-body bg-light text-center py-5">
+              <span class="fa-solid fa-microchip fa-3x text-wvu-blue mb-2" aria-hidden="true"></span>
+              <p class="small mb-0">Electronics</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card photo-thumbnail" data-bs-toggle="modal" data-bs-target="#photoModal" data-photo="Balloon burst captured on video">
+            <div class="card-body bg-light text-center py-5">
+              <span class="fa-solid fa-burst fa-3x text-danger mb-2" aria-hidden="true"></span>
+              <p class="small mb-0">Burst</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-3 text-muted small">
+        <span class="fa-solid fa-camera me-1" aria-hidden="true"></span>
+        Click images to view full-size photos. More photos available on our <a href="https://www.instagram.com/w8cul" target="_blank" rel="noopener">Instagram</a>.
+      </p>
+    </section>
+
+    <!-- Photo Modal -->
+    <div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="photoModalLabel">Photo</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center bg-dark">
+            <div class="py-5">
+              <span class="fa-solid fa-image fa-5x text-white-50 mb-3" aria-hidden="true"></span>
+              <p class="text-white-50" id="photoDescription">Photo description will appear here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Get Involved -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-hand-point-right text-wvu-gold me-2" aria-hidden="true"></span>
+        Get Involved
+      </h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 border-wvu-blue">
+            <div class="card-body">
+              <h3 class="h5 text-wvu-blue">
+                <span class="fa-solid fa-screwdriver-wrench me-2" aria-hidden="true"></span>
+                Build Team
+              </h3>
+              <p>Help design and assemble payload systems, trackers, and recovery equipment. Great for hands-on learners!</p>
+              <ul class="small text-muted mb-0">
+                <li>Soldering and electronics assembly</li>
+                <li>3D printing and fabrication</li>
+                <li>Payload integration and testing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 border-wvu-gold">
+            <div class="card-body">
+              <h3 class="h5 text-wvu-blue">
+                <span class="fa-solid fa-satellite-dish me-2" aria-hidden="true"></span>
+                Tracking Team
+              </h3>
+              <p>Operate ground stations, decode APRS packets, and help with direction finding during recovery.</p>
+              <ul class="small text-muted mb-0">
+                <li>APRS setup and operation</li>
+                <li>Mobile tracking during flights</li>
+                <li>Antenna and radio operations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 border-wvu-gold">
+            <div class="card-body">
+              <h3 class="h5 text-wvu-blue">
+                <span class="fa-solid fa-car me-2" aria-hidden="true"></span>
+                Recovery Team
+              </h3>
+              <p>Chase the balloon and retrieve payloads from landing sites across West Virginia and beyond.</p>
+              <ul class="small text-muted mb-0">
+                <li>Mobile chase operations</li>
+                <li>Navigation and terrain traversal</li>
+                <li>Recovery documentation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 border-wvu-blue">
+            <div class="card-body">
+              <h3 class="h5 text-wvu-blue">
+                <span class="fa-solid fa-flask me-2" aria-hidden="true"></span>
+                Science Team
+              </h3>
+              <p>Design experiments, analyze data, and contribute to research using the platform.</p>
+              <ul class="small text-muted mb-0">
+                <li>Atmospheric sensor design</li>
+                <li>Data analysis and visualization</li>
+                <li>Research collaboration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next Launch -->
+    <section class="mb-5">
+      <div class="card border-0 shadow" style="background: linear-gradient(135deg, var(--bs-wvu-blue) 0%, #1C2B39 100%);">
+        <div class="card-body text-center text-white py-5">
+          <span class="fa-solid fa-calendar-days fa-3x mb-3" aria-hidden="true"></span>
+          <h2 class="h3 mb-3">Next Launch: HAB-6</h2>
+          <p class="lead mb-2">Target: Spring 2026</p>
+          <p class="mb-4">Join us for our next high-altitude mission! No experience necessary.</p>
+          <a href="/membership/join/" class="btn btn-wvu-gold btn-lg text-dark me-2">
+            <span class="fa-solid fa-user-plus me-1" aria-hidden="true"></span>
+            Join the Team
+          </a>
+          <a href="/events/" class="btn btn-outline-light btn-lg">
+            <span class="fa-solid fa-calendar me-1" aria-hidden="true"></span>
+            See Events
+          </a>
+        </div>
+      </div>
+    </section>
+
   </div>
 </main>
 
@@ -391,7 +898,19 @@ const wvuEmergencyAlert = (() => {
 </script>
 
 <script>
-
+// Photo modal handler
+document.addEventListener('DOMContentLoaded', function() {
+    const photoModal = document.getElementById('photoModal');
+    if (photoModal) {
+        photoModal.addEventListener('show.bs.modal', function(event) {
+            const button = event.relatedTarget;
+            const photoDesc = button.getAttribute('data-photo');
+            document.getElementById('photoDescription').textContent = photoDesc;
+            document.getElementById('photoModalLabel').textContent = photoDesc.split(' - ')[0] || 'Photo';
+        });
+    }
+});
+</script>
 
 </body>
 </html>

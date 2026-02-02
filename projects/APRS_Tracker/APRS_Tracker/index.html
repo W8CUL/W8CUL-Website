@@ -35,6 +35,33 @@ NREUM.info = {
     font-weight: 600;
     border-bottom: 2px solid var(--bs-wvu-gold);
 }
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.bom-table th {
+    background-color: var(--bs-wvu-blue);
+    color: white;
+}
+.step-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bs-wvu-gold);
+    color: var(--bs-wvu-blue);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+.spec-badge {
+    background: linear-gradient(135deg, var(--bs-wvu-blue) 0%, #1C2B39 100%);
+}
 </style>
 
 <!-- Font Awesome -->
@@ -261,7 +288,673 @@ NREUM.info = {
 
 <main id="wvu-main-content" class="py-5">
   <div class="container">
-    <p class="lead">An in-house designed TNC kit to turn a Baofeng into an APRS tracker. This page is under construction—check back soon for more details!</p>
+
+    <!-- Project Overview -->
+    <section class="mb-5">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <p class="lead">The W8CUL APRS Tracker is an open-source Terminal Node Controller (TNC) kit that transforms an inexpensive Baofeng handheld radio into a fully functional APRS tracker.</p>
+          <p>Designed by club members for high-altitude balloon tracking, this kit has proven reliable at altitudes exceeding 100,000 feet and temperatures below -60°C. Now available as a build-it-yourself project for club members and the amateur radio community.</p>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <a href="https://github.com/wvuarc/aprs-tracker" class="btn btn-wvu-blue" target="_blank" rel="noopener">
+              <span class="fa-brands fa-github me-2" aria-hidden="true"></span>
+              View on GitHub
+            </a>
+            <a href="#bill-of-materials" class="btn btn-outline-wvu-blue">
+              <span class="fa-solid fa-list me-2" aria-hidden="true"></span>
+              Bill of Materials
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center mt-4 mt-lg-0">
+          <div class="bg-light rounded p-4">
+            <span class="fa-solid fa-microchip fa-5x text-wvu-blue mb-3" aria-hidden="true"></span>
+            <h2 class="h5 mb-2">Build Cost</h2>
+            <p class="display-6 text-wvu-gold mb-0">~$45</p>
+            <p class="small text-muted mb-0">(excluding radio)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-star text-wvu-gold me-2" aria-hidden="true"></span>
+        Key Features
+      </h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <div class="feature-icon bg-wvu-blue text-white mb-3 mx-auto">
+                <span class="fa-solid fa-temperature-low fa-lg" aria-hidden="true"></span>
+              </div>
+              <h3 class="h5">Extreme Temperature</h3>
+              <p class="text-muted small mb-0">Tested to -60°C. Perfect for high-altitude balloon missions and cold-weather operations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <div class="feature-icon bg-wvu-gold text-dark mb-3 mx-auto">
+                <span class="fa-solid fa-bolt fa-lg" aria-hidden="true"></span>
+              </div>
+              <h3 class="h5">Low Power</h3>
+              <p class="text-muted small mb-0">Consumes only 35mA in standby. Run for days on a small battery pack.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <div class="feature-icon bg-wvu-blue text-white mb-3 mx-auto">
+                <span class="fa-solid fa-code fa-lg" aria-hidden="true"></span>
+              </div>
+              <h3 class="h5">Open Source</h3>
+              <p class="text-muted small mb-0">Full schematics, PCB files, and firmware available on GitHub under MIT license.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <div class="feature-icon bg-wvu-gold text-dark mb-3 mx-auto">
+                <span class="fa-solid fa-satellite-dish fa-lg" aria-hidden="true"></span>
+              </div>
+              <h3 class="h5">GPS Telemetry</h3>
+              <p class="text-muted small mb-0">Transmits position, altitude, speed, temperature, and battery voltage.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <div class="feature-icon bg-wvu-blue text-white mb-3 mx-auto">
+                <span class="fa-solid fa-plug fa-lg" aria-hidden="true"></span>
+              </div>
+              <h3 class="h5">Baofeng Compatible</h3>
+              <p class="text-muted small mb-0">Works with UV-5R and similar radios. Just plug in the audio cable and go.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <div class="feature-icon bg-wvu-gold text-dark mb-3 mx-auto">
+                <span class="fa-solid fa-wrench fa-lg" aria-hidden="true"></span>
+              </div>
+              <h3 class="h5">Easy Assembly</h3>
+              <p class="text-muted small mb-0">Through-hole components only. Great first soldering project!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-microchip text-wvu-gold me-2" aria-hidden="true"></span>
+        Technical Specifications
+      </h2>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card h-100">
+            <div class="card-header bg-wvu-blue text-white">
+              <h3 class="h5 mb-0">
+                <span class="fa-solid fa-cpu me-2" aria-hidden="true"></span>
+                Processor & GPS
+              </h3>
+            </div>
+            <div class="card-body">
+              <table class="table table-sm mb-0">
+                <tr>
+                  <td class="fw-bold">MCU</td>
+                  <td>ATmega328P @ 8MHz</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">GPS Module</td>
+                  <td>u-blox NEO-6M</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">GPS Sensitivity</td>
+                  <td>-161 dBm</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Position Accuracy</td>
+                  <td>2.5m CEP</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Update Rate</td>
+                  <td>1Hz (configurable)</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Max Altitude</td>
+                  <td>50,000m (flight mode)</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card h-100">
+            <div class="card-header bg-wvu-gold text-dark">
+              <h3 class="h5 mb-0">
+                <span class="fa-solid fa-wave-square me-2" aria-hidden="true"></span>
+                APRS & Audio
+              </h3>
+            </div>
+            <div class="card-body">
+              <table class="table table-sm mb-0">
+                <tr>
+                  <td class="fw-bold">Protocol</td>
+                  <td>APRS (AX.25 1200 baud)</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Modulation</td>
+                  <td>AFSK (1200/2200 Hz)</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">TX Interval</td>
+                  <td>Configurable (default 60s)</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Smart Beaconing</td>
+                  <td>Yes (corner pegging)</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Audio Output</td>
+                  <td>3.5mm TRRS connector</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">PTT Control</td>
+                  <td>VOX or direct PTT</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card h-100">
+            <div class="card-header bg-wvu-blue text-white">
+              <h3 class="h5 mb-0">
+                <span class="fa-solid fa-battery-full me-2" aria-hidden="true"></span>
+                Power
+              </h3>
+            </div>
+            <div class="card-body">
+              <table class="table table-sm mb-0">
+                <tr>
+                  <td class="fw-bold">Input Voltage</td>
+                  <td>3.3V - 5.5V DC</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Current (idle)</td>
+                  <td>35mA @ 3.3V</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Current (TX)</td>
+                  <td>45mA @ 3.3V</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Recommended Battery</td>
+                  <td>2x AA Lithium or 1S LiPo</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Regulator</td>
+                  <td>MCP1700 LDO</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Reverse Polarity</td>
+                  <td>Protected</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card h-100">
+            <div class="card-header bg-wvu-gold text-dark">
+              <h3 class="h5 mb-0">
+                <span class="fa-solid fa-thermometer-half me-2" aria-hidden="true"></span>
+                Environmental
+              </h3>
+            </div>
+            <div class="card-body">
+              <table class="table table-sm mb-0">
+                <tr>
+                  <td class="fw-bold">Operating Temp</td>
+                  <td>-60°C to +85°C</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Storage Temp</td>
+                  <td>-65°C to +150°C</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Humidity</td>
+                  <td>0-95% non-condensing</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">PCB Size</td>
+                  <td>50mm x 70mm</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Weight</td>
+                  <td>28g (without battery)</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Mounting</td>
+                  <td>4x M3 holes</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bill of Materials -->
+    <section class="mb-5" id="bill-of-materials">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-list-check text-wvu-gold me-2" aria-hidden="true"></span>
+        Bill of Materials
+      </h2>
+      <div class="table-responsive">
+        <table class="table table-striped bom-table">
+          <thead>
+            <tr>
+              <th>Qty</th>
+              <th>Component</th>
+              <th>Value/Part Number</th>
+              <th>Notes</th>
+              <th>Est. Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>PCB</td>
+              <td>W8CUL Tracker v2.1</td>
+              <td><a href="https://github.com/wvuarc/aprs-tracker" target="_blank" rel="noopener">Gerber files on GitHub</a></td>
+              <td>$5.00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Microcontroller</td>
+              <td>ATmega328P-PU (DIP-28)</td>
+              <td>Pre-programmed with bootloader</td>
+              <td>$3.50</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>GPS Module</td>
+              <td>u-blox NEO-6M</td>
+              <td>With ceramic antenna</td>
+              <td>$12.00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Crystal</td>
+              <td>8MHz HC-49S</td>
+              <td>Low-temp rated preferred</td>
+              <td>$0.50</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Capacitor</td>
+              <td>22pF ceramic</td>
+              <td>For crystal</td>
+              <td>$0.20</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Capacitor</td>
+              <td>100nF ceramic</td>
+              <td>Decoupling</td>
+              <td>$0.30</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Capacitor</td>
+              <td>10µF electrolytic</td>
+              <td>Power filtering</td>
+              <td>$0.20</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Voltage Regulator</td>
+              <td>MCP1700-3302E</td>
+              <td>3.3V LDO</td>
+              <td>$0.80</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Audio Jack</td>
+              <td>3.5mm TRRS</td>
+              <td>Panel mount</td>
+              <td>$1.50</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>LED</td>
+              <td>3mm (Red, Green)</td>
+              <td>Status indicators</td>
+              <td>$0.30</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Resistor</td>
+              <td>330Ω</td>
+              <td>LED current limiting</td>
+              <td>$0.10</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Resistor</td>
+              <td>10kΩ</td>
+              <td>Pull-up resistors</td>
+              <td>$0.10</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Resistor</td>
+              <td>4.7kΩ</td>
+              <td>Audio level</td>
+              <td>$0.05</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Potentiometer</td>
+              <td>10kΩ trimmer</td>
+              <td>Audio level adjust</td>
+              <td>$0.50</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>IC Socket</td>
+              <td>28-pin DIP</td>
+              <td>For ATmega328P</td>
+              <td>$0.50</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Header</td>
+              <td>6-pin FTDI</td>
+              <td>Programming header</td>
+              <td>$0.30</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Battery Holder</td>
+              <td>2xAA</td>
+              <td>Or JST connector for LiPo</td>
+              <td>$1.50</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Antenna Cable</td>
+              <td>SMA pigtail</td>
+              <td>For external GPS antenna (optional)</td>
+              <td>$2.00</td>
+            </tr>
+            <tr class="table-warning">
+              <td colspan="4" class="text-end fw-bold">Estimated Total (PCB + Components)</td>
+              <td class="fw-bold">~$29</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="alert alert-info mt-3">
+        <span class="fa-solid fa-info-circle me-2" aria-hidden="true"></span>
+        <strong>Note:</strong> Radio not included. We recommend the Baofeng UV-5R (~$25) or similar VHF radio. Club members can often get components at cost during build sessions.
+      </div>
+    </section>
+
+    <!-- Assembly Instructions -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-screwdriver-wrench text-wvu-gold me-2" aria-hidden="true"></span>
+        Assembly Instructions
+      </h2>
+      <p class="text-muted mb-4">Follow these steps to build your W8CUL APRS Tracker. Total assembly time: 1-2 hours.</p>
+
+      <div class="accordion" id="assemblyAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#step1" aria-expanded="true" aria-controls="step1">
+              <span class="step-number me-3">1</span>
+              Gather Tools and Components
+            </button>
+          </h3>
+          <div id="step1" class="accordion-collapse collapse show" data-bs-parent="#assemblyAccordion">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h4 class="h6">Required Tools:</h4>
+                  <ul>
+                    <li>Soldering iron (temperature controlled, 350°C)</li>
+                    <li>Solder (lead-free recommended, 0.8mm)</li>
+                    <li>Flush cutters</li>
+                    <li>Multimeter</li>
+                    <li>Tweezers</li>
+                    <li>Safety glasses</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h4 class="h6">Nice to Have:</h4>
+                  <ul>
+                    <li>PCB holder / helping hands</li>
+                    <li>Solder wick or solder sucker</li>
+                    <li>Magnifying lamp</li>
+                    <li>USB-to-FTDI programmer</li>
+                    <li>Oscilloscope (for debugging)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="alert alert-warning mt-3 mb-0">
+                <span class="fa-solid fa-triangle-exclamation me-2" aria-hidden="true"></span>
+                Verify all components against the BOM before starting. Check for damaged or missing parts.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step2" aria-expanded="false" aria-controls="step2">
+              <span class="step-number me-3">2</span>
+              Solder Low-Profile Components First
+            </button>
+          </h3>
+          <div id="step2" class="accordion-collapse collapse" data-bs-parent="#assemblyAccordion">
+            <div class="accordion-body">
+              <p>Start with the lowest-profile components and work up. This makes soldering easier.</p>
+              <ol>
+                <li class="mb-2"><strong>Resistors (R1-R5):</strong> Bend leads, insert, solder, and trim. Orientation doesn't matter.</li>
+                <li class="mb-2"><strong>Ceramic Capacitors (C1-C5):</strong> No polarity. Insert and solder.</li>
+                <li class="mb-2"><strong>Crystal (Y1):</strong> Insert the 8MHz crystal. Keep it close to the board.</li>
+                <li class="mb-2"><strong>IC Socket (U1):</strong> Note the notch orientation! Solder corner pins first, then all pins.</li>
+                <li><strong>Trimmer Potentiometer (RV1):</strong> Push flush to board and solder.</li>
+              </ol>
+              <p class="text-muted small mb-0">
+                <span class="fa-solid fa-lightbulb me-1"></span>
+                Tip: Solder one pin first, check alignment, then complete the rest.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step3" aria-expanded="false" aria-controls="step3">
+              <span class="step-number me-3">3</span>
+              Solder Tall Components
+            </button>
+          </h3>
+          <div id="step3" class="accordion-collapse collapse" data-bs-parent="#assemblyAccordion">
+            <div class="accordion-body">
+              <ol>
+                <li class="mb-2"><strong>Electrolytic Capacitor (C6):</strong> Watch polarity! Negative stripe goes to the marked side.</li>
+                <li class="mb-2"><strong>Voltage Regulator (U2):</strong> Flat side matches silkscreen. Don't overheat!</li>
+                <li class="mb-2"><strong>LEDs (D1, D2):</strong> Long leg is positive. Match to + marking on board.</li>
+                <li class="mb-2"><strong>FTDI Header (J1):</strong> 6-pin header for programming.</li>
+                <li><strong>Audio Jack (J2):</strong> May need to file mounting tabs slightly.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step4" aria-expanded="false" aria-controls="step4">
+              <span class="step-number me-3">4</span>
+              Install GPS Module
+            </button>
+          </h3>
+          <div id="step4" class="accordion-collapse collapse" data-bs-parent="#assemblyAccordion">
+            <div class="accordion-body">
+              <ol>
+                <li class="mb-2">Solder the 4-pin header to the GPS module if not pre-installed.</li>
+                <li class="mb-2">Connect GPS to main board: VCC→3.3V, GND→GND, TX→RX, RX→TX.</li>
+                <li class="mb-2">The ceramic antenna should face up and have a clear view of the sky.</li>
+                <li>For high-altitude use, configure the GPS for "flight mode" to work above 18km.</li>
+              </ol>
+              <div class="alert alert-info mb-0">
+                <span class="fa-solid fa-info-circle me-2" aria-hidden="true"></span>
+                The GPS needs to be configured for flight mode using u-center software. Instructions are in the GitHub repository.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step5" aria-expanded="false" aria-controls="step5">
+              <span class="step-number me-3">5</span>
+              Program the Microcontroller
+            </button>
+          </h3>
+          <div id="step5" class="accordion-collapse collapse" data-bs-parent="#assemblyAccordion">
+            <div class="accordion-body">
+              <ol>
+                <li class="mb-2">Insert the ATmega328P into the socket. Match the notch to the silkscreen!</li>
+                <li class="mb-2">Connect a USB-FTDI adapter to the programming header.</li>
+                <li class="mb-2">Open Arduino IDE and select "Arduino Pro Mini 3.3V 8MHz".</li>
+                <li class="mb-2">Download the firmware from <a href="https://github.com/wvuarc/aprs-tracker" target="_blank" rel="noopener">GitHub</a>.</li>
+                <li class="mb-2">Edit config.h to set your callsign, SSID, and beacon interval.</li>
+                <li>Upload the sketch. The green LED should blink on successful programming.</li>
+              </ol>
+              <pre class="bg-dark text-light p-3 rounded small"><code>// config.h - Example configuration
+#define CALLSIGN "W8CUL"
+#define SSID 11
+#define BEACON_INTERVAL 60  // seconds
+#define SYMBOL '/'  // APRS symbol
+#define SYMBOL_TABLE 'O'  // Balloon</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step6" aria-expanded="false" aria-controls="step6">
+              <span class="step-number me-3">6</span>
+              Test and Calibrate
+            </button>
+          </h3>
+          <div id="step6" class="accordion-collapse collapse" data-bs-parent="#assemblyAccordion">
+            <div class="accordion-body">
+              <ol>
+                <li class="mb-2"><strong>Power Test:</strong> Connect battery. Check 3.3V at regulator output.</li>
+                <li class="mb-2"><strong>GPS Lock:</strong> Take outside. Red LED should flash when GPS has lock (may take 5 min on first use).</li>
+                <li class="mb-2"><strong>Audio Level:</strong> Connect to radio and monitor on another receiver. Adjust trimmer for clean audio.</li>
+                <li class="mb-2"><strong>APRS Test:</strong> Verify packets are decoded correctly on aprs.fi or a local iGate.</li>
+                <li><strong>Range Test:</strong> Walk around campus and verify coverage.</li>
+              </ol>
+              <div class="alert alert-success mb-0">
+                <span class="fa-solid fa-check-circle me-2" aria-hidden="true"></span>
+                <strong>Success!</strong> If your packets appear on aprs.fi, your tracker is working correctly.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-book text-wvu-gold me-2" aria-hidden="true"></span>
+        Resources & Downloads
+      </h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <a href="https://github.com/wvuarc/aprs-tracker" target="_blank" rel="noopener" class="text-decoration-none">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <span class="fa-brands fa-github fa-3x text-dark mb-3" aria-hidden="true"></span>
+                <h3 class="h6 text-dark">GitHub Repository</h3>
+                <p class="small text-muted mb-0">Source code, schematics, and documentation</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="https://github.com/wvuarc/aprs-tracker/releases" target="_blank" rel="noopener" class="text-decoration-none">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <span class="fa-solid fa-file-zipper fa-3x text-wvu-blue mb-3" aria-hidden="true"></span>
+                <h3 class="h6 text-dark">Gerber Files</h3>
+                <p class="small text-muted mb-0">PCB manufacturing files for JLCPCB, OSHPark, etc.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="https://github.com/wvuarc/aprs-tracker/wiki" target="_blank" rel="noopener" class="text-decoration-none">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <span class="fa-solid fa-book-open fa-3x text-wvu-gold mb-3" aria-hidden="true"></span>
+                <h3 class="h6 text-dark">Wiki & Guides</h3>
+                <p class="small text-muted mb-0">Detailed assembly photos and troubleshooting</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="https://aprs.fi" target="_blank" rel="noopener" class="text-decoration-none">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <span class="fa-solid fa-map-location-dot fa-3x text-success mb-3" aria-hidden="true"></span>
+                <h3 class="h6 text-dark">APRS.fi</h3>
+                <p class="small text-muted mb-0">View your tracker on the APRS network</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get a Kit -->
+    <section class="mb-5">
+      <div class="card border-0 shadow" style="background: linear-gradient(135deg, var(--bs-wvu-blue) 0%, #1C2B39 100%);">
+        <div class="card-body text-center text-white py-5">
+          <span class="fa-solid fa-box-open fa-3x mb-3" aria-hidden="true"></span>
+          <h2 class="h3 mb-3">Want to Build One?</h2>
+          <p class="lead mb-4">Join W8CUL and participate in our build sessions. We provide components at cost and hands-on help with assembly.</p>
+          <a href="/membership/join/" class="btn btn-wvu-gold btn-lg text-dark me-2">
+            <span class="fa-solid fa-user-plus me-1" aria-hidden="true"></span>
+            Join the Club
+          </a>
+          <a href="/events/" class="btn btn-outline-light btn-lg">
+            <span class="fa-solid fa-calendar me-1" aria-hidden="true"></span>
+            Build Sessions
+          </a>
+        </div>
+      </div>
+    </section>
+
   </div>
 </main>
 

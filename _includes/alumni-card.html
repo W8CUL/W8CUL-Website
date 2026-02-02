@@ -1,0 +1,29 @@
+{% comment %}
+Alumni Card Include
+Usage: {% include alumni-card.html alumni=alumni %}
+{% endcomment %}
+
+<div class="col-md-6 col-lg-4 mb-4 alumni-item" data-decade="{{ include.decade }}">
+    <div class="card h-100 alumni-card">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="card-title h5 mb-0">{{ include.alumni.name }}</h3>
+                <span class="badge bg-wvu-gold text-dark">{{ include.alumni.callsign }}</span>
+            </div>
+            <p class="card-text mb-1 small text-muted">
+                <span class="fa-solid fa-graduation-cap me-1" aria-hidden="true"></span>
+                Class of {{ include.alumni.graduation_year }} - {{ include.alumni.degree }}
+            </p>
+            <p class="card-text mb-2 small">
+                <span class="fa-solid fa-briefcase text-wvu-blue me-1" aria-hidden="true"></span>
+                {{ include.alumni.current_position }}
+            </p>
+            {% if include.alumni.highlight %}
+            <p class="card-text small text-muted fst-italic">
+                <span class="fa-solid fa-star text-wvu-gold me-1" aria-hidden="true"></span>
+                {{ include.alumni.highlight }}
+            </p>
+            {% endif %}
+        </div>
+    </div>
+</div>

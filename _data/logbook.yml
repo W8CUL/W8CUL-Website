@@ -1,0 +1,96 @@
+# WVU Amateur Radio Club QSL Logbook Statistics
+# Edit this file to update logbook statistics
+
+# Current statistics (update periodically)
+stats:
+  total_qsos: 2847
+  countries_worked: 67
+  states_worked: 48
+  grids_worked: 312
+  last_updated: "2026-01-15"
+
+# Recent notable contacts
+recent_contacts:
+  - callsign: JA1ABC
+    location: Japan
+    band: "20m"
+    mode: FT8
+    date: "2026-01-14"
+
+  - callsign: VK2XYZ
+    location: Australia
+    band: "15m"
+    mode: SSB
+    date: "2026-01-12"
+
+  - callsign: EA8DEF
+    location: Canary Islands
+    band: "17m"
+    mode: FT8
+    date: "2026-01-10"
+
+  - callsign: ZL3QRS
+    location: New Zealand
+    band: "20m"
+    mode: CW
+    date: "2026-01-08"
+
+  - callsign: PY2GHI
+    location: Brazil
+    band: "10m"
+    mode: SSB
+    date: "2026-01-06"
+
+# DXCC entities confirmed
+dxcc_highlights:
+  - entity: Japan
+    prefix: JA
+    confirmed: true
+  - entity: Australia
+    prefix: VK
+    confirmed: true
+  - entity: Germany
+    prefix: DL
+    confirmed: true
+  - entity: United Kingdom
+    prefix: G
+    confirmed: true
+  - entity: Brazil
+    prefix: PY
+    confirmed: true
+  - entity: New Zealand
+    prefix: ZL
+    confirmed: true
+  - entity: South Africa
+    prefix: ZS
+    confirmed: true
+
+# Awards progress
+awards:
+  - name: DXCC
+    current: 67
+    goal: 100
+    description: Work 100 DXCC entities
+
+  - name: WAS
+    current: 48
+    goal: 50
+    description: Work All States
+
+  - name: WAC
+    current: 6
+    goal: 6
+    description: Work All Continents
+    complete: true
+
+# External log links
+external_logs:
+  clublog:
+    enabled: true
+    url: "https://clublog.org/chart/?call=W8CUL"
+  qrz:
+    enabled: true
+    url: "https://www.qrz.com/db/W8CUL"
+  lotw:
+    enabled: true
+    url: "https://lotw.arrl.org/"

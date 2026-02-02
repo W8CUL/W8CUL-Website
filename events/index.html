@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="/assets/W8CUL.ico"/>
 <title>Events | WVU Amateur Radio Club</title>
-<meta name="description" content="Official website of the WVU Amateur Radio Club - W8CUL">
+<meta name="description" content="Events and activities for the WVU Amateur Radio Club - W8CUL">
 
 <!-- New Relic Browser Monitoring -->
 <script type="text/javascript">
@@ -34,6 +34,23 @@ NREUM.info = {
     color: #fff;
     font-weight: 600;
     border-bottom: 2px solid var(--bs-wvu-gold);
+}
+.event-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.event-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.next-meeting-highlight {
+    border-left: 4px solid var(--bs-wvu-gold);
+}
+.filter-btn.active {
+    background-color: var(--bs-wvu-blue) !important;
+    color: white !important;
+}
+.event-card.hidden {
+    display: none;
 }
 </style>
 
@@ -118,120 +135,120 @@ NREUM.info = {
 
             <ul id="wvu-site-nav__items"
                 class="wvu-site-nav__items js-wvu-site-nav-items position-static list-unstyled d-lg-flex align-items-lg-center flex-lg-wrap mb-0">
-                
-                
+
+
                 <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/">Home</a></li>
-                
-                
-                
+
+
+
                 <li class="wvu-site-nav__menu-item-has-children position-relative d-lg-flex">
                     <a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/membership/">Members</a>
                     <ul class="wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0 wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0--level-1">
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/membership/join/">Join</a></li>
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/membership/resources/">Resources</a></li>
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/membership/alumni/">Alumni</a></li>
-                        
+
                     </ul>
                 </li>
-                
-                
-                
+
+
+
                 <li class="wvu-site-nav__menu-item-has-children position-relative d-lg-flex">
                     <a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/projects/">Projects</a>
                     <ul class="wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0 wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0--level-1">
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/projects/Balloon_Project/Balloon_Project/">Balloon Project</a></li>
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/projects/APRS_Tracker/APRS_Tracker/">APRS Tracker</a></li>
-                        
+
                     </ul>
                 </li>
-                
-                
-                
+
+
+
                 <li class="wvu-site-nav__menu-item-has-children position-relative d-lg-flex">
                     <a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/shack/">The Shack</a>
                     <ul class="wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0 wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0--level-1">
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/shack/equipment/">Equipment</a></li>
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="https://wvuarc.statler.wvu.edu/hamclock/" target="_blank" rel="noopener">Hamclock</a></li>
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/shack/logbook/">QSL Logbook</a></li>
-                        
+
                     </ul>
                 </li>
-                
-                
-                
+
+
+
                 <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1 active"
                        aria-current="page"
                        href="/events/">Events</a></li>
-                
-                
-                
+
+
+
                 <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/licensing/">Licensing</a></li>
-                
-                
-                
+
+
+
                 <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/officers/">Officers</a></li>
-                
-                
-                
+
+
+
                 <li class="wvu-site-nav__menu-item-has-children position-relative d-lg-flex">
                     <a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/sponsors/">Sponsors</a>
                     <ul class="wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0 wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0--level-1">
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/sponsors/donate/">Donate</a></li>
-                        
+
                     </ul>
                 </li>
-                
-                
+
+
             </ul>
 
             <!-- Social Links -->
             <div class="d-flex align-items-center">
                 <ul class="list-inline mb-0 me-2">
-                    
+
                     <li class="list-inline-item">
                         <a class="mb-0 text-decoration-none text-white-50" href="https://discord.gg/mnHW67hShz">
                             <span class="fab fa-discord"></span><span class="visually-hidden">Discord</span>
                         </a>
                     </li>
-                    
+
                     <li class="list-inline-item">
                         <a class="mb-0 text-decoration-none text-white-50" href="https://www.instagram.com/w8cul">
                             <span class="fab fa-instagram"></span><span class="visually-hidden">Instagram</span>
                         </a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -260,7 +277,323 @@ NREUM.info = {
 
 <main id="wvu-main-content" class="py-5">
   <div class="container">
-    <p class="lead">This page is under construction. Check back soon!</p>
+
+    <!-- Next Meeting Highlight -->
+    <section class="mb-5">
+      <div class="card next-meeting-highlight bg-light">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <h2 class="h4 mb-2">
+                <span class="fa-solid fa-calendar-check text-wvu-gold me-2" aria-hidden="true"></span>
+                Next Meeting
+              </h2>
+              <p class="h5 mb-1" id="next-meeting-date">Every Tuesday at 7:00 PM</p>
+              <p class="mb-0 text-muted">
+                <span class="fa-solid fa-location-dot me-1" aria-hidden="true"></span>
+                ESB 529 (The Shack)
+              </p>
+            </div>
+            <div class="col-md-4 text-md-end mt-3 mt-md-0">
+              <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=W8CUL+Weekly+Meeting&dates=20260203T190000/20260203T210000&details=WVU+Amateur+Radio+Club+weekly+meeting.+All+experience+levels+welcome!&location=ESB+529,+WVU+Evansdale+Campus&recur=RRULE:FREQ=WEEKLY;BYDAY=TU"
+                 class="btn btn-wvu-gold text-dark" target="_blank" rel="noopener">
+                <span class="fa-solid fa-calendar-plus me-1" aria-hidden="true"></span>
+                Add to Calendar
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recurring Events -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-repeat text-wvu-blue me-2" aria-hidden="true"></span>
+        Weekly Schedule
+      </h2>
+      <div class="row g-4">
+        <!-- Weekly Meeting -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 event-card" data-event-type="meeting">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="card-title h5 mb-0">Weekly Club Meeting</h3>
+                <span class="badge bg-wvu-blue text-white">
+                  <span class="fa-solid fa-users" aria-hidden="true"></span> Meeting
+                </span>
+              </div>
+              <p class="card-text mb-1">
+                <span class="fa-solid fa-calendar-days text-wvu-gold me-2" aria-hidden="true"></span>
+                <strong>Every Tuesday</strong> at 7:00 PM
+              </p>
+              <p class="card-text mb-2">
+                <span class="fa-solid fa-location-dot text-wvu-blue me-2" aria-hidden="true"></span>
+                ESB 529 (The Shack)
+              </p>
+              <p class="card-text text-muted">Join us for our weekly meeting! All experience levels welcome.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Study Session -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 event-card" data-event-type="study">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="card-title h5 mb-0">License Study Session</h3>
+                <span class="badge bg-wvu-gold text-dark">
+                  <span class="fa-solid fa-book" aria-hidden="true"></span> Study
+                </span>
+              </div>
+              <p class="card-text mb-1">
+                <span class="fa-solid fa-calendar-days text-wvu-gold me-2" aria-hidden="true"></span>
+                <strong>Every Thursday</strong> at 6:00 PM
+              </p>
+              <p class="card-text mb-2">
+                <span class="fa-solid fa-location-dot text-wvu-blue me-2" aria-hidden="true"></span>
+                ESB 529 (The Shack)
+              </p>
+              <p class="card-text text-muted">Study for your Technician, General, or Extra class license exam.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Net Night -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 event-card" data-event-type="net">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="card-title h5 mb-0">W8CUL Net</h3>
+                <span class="badge bg-success text-white">
+                  <span class="fa-solid fa-broadcast-tower" aria-hidden="true"></span> Net
+                </span>
+              </div>
+              <p class="card-text mb-1">
+                <span class="fa-solid fa-calendar-days text-wvu-gold me-2" aria-hidden="true"></span>
+                <strong>Every Wednesday</strong> at 8:00 PM
+              </p>
+              <p class="card-text mb-2">
+                <span class="fa-solid fa-broadcast-tower text-wvu-blue me-2" aria-hidden="true"></span>
+                145.450 MHz Repeater
+              </p>
+              <p class="card-text text-muted">Weekly on-air net. Check in and practice your radio skills!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Type Filter -->
+    <section class="mb-4">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-calendar-alt text-wvu-blue me-2" aria-hidden="true"></span>
+        Upcoming Events
+      </h2>
+      <div class="mb-4">
+        <span class="me-2 text-muted">Filter:</span>
+        <button class="btn btn-sm btn-outline-secondary filter-btn active me-1" data-filter="all">All</button>
+        <button class="btn btn-sm btn-outline-secondary filter-btn me-1" data-filter="special">Special Events</button>
+        <button class="btn btn-sm btn-outline-secondary filter-btn me-1" data-filter="exam">VE Exams</button>
+        <button class="btn btn-sm btn-outline-secondary filter-btn me-1" data-filter="contest">Contests</button>
+        <button class="btn btn-sm btn-outline-secondary filter-btn me-1" data-filter="trip">Trips</button>
+        <button class="btn btn-sm btn-outline-secondary filter-btn" data-filter="outreach">Outreach</button>
+      </div>
+    </section>
+
+    <!-- Upcoming Events Grid -->
+    <section class="mb-5">
+      <div class="row g-4" id="upcoming-events">
+
+        <!-- VE Exam March -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 event-card" data-event-type="exam">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="card-title h5 mb-0">VE License Exam Session</h3>
+                <span class="badge bg-info text-white">
+                  <span class="fa-solid fa-id-card" aria-hidden="true"></span> VE Exam
+                </span>
+              </div>
+              <p class="card-text mb-1">
+                <span class="fa-solid fa-calendar-days text-wvu-gold me-2" aria-hidden="true"></span>
+                <strong>March 15, 2026</strong> at 10:00 AM
+              </p>
+              <p class="card-text mb-2">
+                <span class="fa-solid fa-location-dot text-wvu-blue me-2" aria-hidden="true"></span>
+                ESB 529
+              </p>
+              <p class="card-text text-muted">Walk-ins welcome! Bring $15 cash, two forms of ID, and your FRN if you have one.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- VE Exam April -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 event-card" data-event-type="exam">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="card-title h5 mb-0">VE License Exam Session</h3>
+                <span class="badge bg-info text-white">
+                  <span class="fa-solid fa-id-card" aria-hidden="true"></span> VE Exam
+                </span>
+              </div>
+              <p class="card-text mb-1">
+                <span class="fa-solid fa-calendar-days text-wvu-gold me-2" aria-hidden="true"></span>
+                <strong>April 19, 2026</strong> at 10:00 AM
+              </p>
+              <p class="card-text mb-2">
+                <span class="fa-solid fa-location-dot text-wvu-blue me-2" aria-hidden="true"></span>
+                ESB 529
+              </p>
+              <p class="card-text text-muted">Walk-ins welcome! Bring $15 cash, two forms of ID, and your FRN if you have one.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hamvention Trip -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 event-card" data-event-type="trip">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="card-title h5 mb-0">Dayton Hamvention Trip</h3>
+                <span class="badge bg-secondary text-white">
+                  <span class="fa-solid fa-bus" aria-hidden="true"></span> Trip
+                </span>
+              </div>
+              <p class="card-text mb-1">
+                <span class="fa-solid fa-calendar-days text-wvu-gold me-2" aria-hidden="true"></span>
+                <strong>May 15-17, 2026</strong>
+              </p>
+              <p class="card-text mb-2">
+                <span class="fa-solid fa-location-dot text-wvu-blue me-2" aria-hidden="true"></span>
+                Xenia, OH
+              </p>
+              <p class="card-text text-muted">Join us for the world's largest amateur radio gathering! Transportation available for members.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 pt-0">
+              <a href="https://hamvention.org/" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                <span class="fa-solid fa-external-link-alt me-1" aria-hidden="true"></span>
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Field Day -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 event-card" data-event-type="special">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="card-title h5 mb-0">Field Day 2026</h3>
+                <span class="badge bg-danger text-white">
+                  <span class="fa-solid fa-star" aria-hidden="true"></span> Special
+                </span>
+              </div>
+              <p class="card-text mb-1">
+                <span class="fa-solid fa-calendar-days text-wvu-gold me-2" aria-hidden="true"></span>
+                <strong>June 27-28, 2026</strong> at 2:00 PM
+              </p>
+              <p class="card-text mb-2">
+                <span class="fa-solid fa-location-dot text-wvu-blue me-2" aria-hidden="true"></span>
+                WVU Core Arboretum
+              </p>
+              <p class="card-text text-muted">ARRL Field Day - the largest amateur radio event of the year! Join us for 24 hours of emergency communications practice and fun.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 pt-0">
+              <a href="https://www.arrl.org/field-day" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                <span class="fa-solid fa-external-link-alt me-1" aria-hidden="true"></span>
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- JOTA -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 event-card" data-event-type="outreach">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="card-title h5 mb-0">Jamboree on the Air (JOTA)</h3>
+                <span class="badge bg-success text-white">
+                  <span class="fa-solid fa-hand-holding-heart" aria-hidden="true"></span> Outreach
+                </span>
+              </div>
+              <p class="card-text mb-1">
+                <span class="fa-solid fa-calendar-days text-wvu-gold me-2" aria-hidden="true"></span>
+                <strong>October 17-18, 2026</strong>
+              </p>
+              <p class="card-text mb-2">
+                <span class="fa-solid fa-location-dot text-wvu-blue me-2" aria-hidden="true"></span>
+                ESB 529 (The Shack)
+              </p>
+              <p class="card-text text-muted">Help introduce Scouts to amateur radio during this annual worldwide event.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CQ WW Contest -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 event-card" data-event-type="contest">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="card-title h5 mb-0">CQ World Wide DX Contest (SSB)</h3>
+                <span class="badge bg-warning text-dark">
+                  <span class="fa-solid fa-trophy" aria-hidden="true"></span> Contest
+                </span>
+              </div>
+              <p class="card-text mb-1">
+                <span class="fa-solid fa-calendar-days text-wvu-gold me-2" aria-hidden="true"></span>
+                <strong>October 24-25, 2026</strong>
+              </p>
+              <p class="card-text mb-2">
+                <span class="fa-solid fa-location-dot text-wvu-blue me-2" aria-hidden="true"></span>
+                ESB 529 (The Shack)
+              </p>
+              <p class="card-text text-muted">Work stations around the world in this major DX contest. All operators welcome!</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Google Calendar Embed -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-brands fa-google text-wvu-blue me-2" aria-hidden="true"></span>
+        Club Calendar
+      </h2>
+      <div class="ratio ratio-16x9">
+        <iframe src="https://calendar.google.com/calendar/embed?src=wvuarc%40gmail.com&ctz=America%2FNew_York&mode=AGENDA&showTitle=0&showPrint=0&showCalendars=0"
+                style="border: 0"
+                frameborder="0"
+                scrolling="no"
+                title="W8CUL Club Calendar">
+        </iframe>
+      </div>
+      <p class="mt-3 text-muted small">
+        <span class="fa-solid fa-calendar-plus me-1" aria-hidden="true"></span>
+        <a href="https://calendar.google.com/calendar/r?cid=wvuarc@gmail.com" target="_blank" rel="noopener">
+          Subscribe to our Google Calendar
+        </a>
+      </p>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="text-center py-5 bg-light rounded">
+      <h2 class="h4 mb-3">Want to attend an event?</h2>
+      <p class="text-muted mb-4">All events are open to WVU students, faculty, and community members. No experience necessary!</p>
+      <a href="/membership/join/" class="btn btn-wvu-blue btn-lg me-2">
+        <span class="fa-solid fa-user-plus me-1" aria-hidden="true"></span>
+        Join the Club
+      </a>
+      <a href="/contact/" class="btn btn-outline-wvu-blue btn-lg">
+        <span class="fa-solid fa-envelope me-1" aria-hidden="true"></span>
+        Contact Us
+      </a>
+    </section>
+
   </div>
 </main>
 
@@ -389,8 +722,51 @@ const wvuEmergencyAlert = (() => {
 })();
 </script>
 
+<!-- Event Filter Script -->
 <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Event type filtering
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const eventCards = document.querySelectorAll('#upcoming-events .event-card');
 
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filter = this.dataset.filter;
+
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+
+            // Filter events
+            eventCards.forEach(card => {
+                const cardType = card.dataset.eventType;
+                if (filter === 'all' || cardType === filter) {
+                    card.closest('.col-md-6').style.display = '';
+                } else {
+                    card.closest('.col-md-6').style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Calculate next meeting date
+    function getNextTuesday() {
+        const now = new Date();
+        const dayOfWeek = now.getDay();
+        const daysUntilTuesday = (2 - dayOfWeek + 7) % 7;
+        const nextTuesday = new Date(now);
+        nextTuesday.setDate(now.getDate() + (daysUntilTuesday === 0 ? 7 : daysUntilTuesday));
+        return nextTuesday;
+    }
+
+    const nextMeetingEl = document.getElementById('next-meeting-date');
+    if (nextMeetingEl) {
+        const nextTuesday = getNextTuesday();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        nextMeetingEl.textContent = nextTuesday.toLocaleDateString('en-US', options) + ' at 7:00 PM';
+    }
+});
+</script>
 
 </body>
 </html>

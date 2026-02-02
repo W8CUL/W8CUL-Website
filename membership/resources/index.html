@@ -261,9 +261,400 @@ NREUM.info = {
 
 <main id="wvu-main-content" class="py-5">
   <div class="container">
-    <p class="lead">This page is under construction. Check back soon!</p>
+
+    <!-- Introduction -->
+    <section class="mb-5">
+      <p class="lead">Find study materials, software tools, club documents, and helpful links for amateur radio operators.</p>
+    </section>
+
+    <!-- Quick Reference: Repeater Frequencies -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-broadcast-tower text-wvu-gold me-2" aria-hidden="true"></span>
+        Quick Reference: Local Repeaters
+      </h2>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead class="table-dark">
+            <tr>
+              <th>Callsign</th>
+              <th>Output</th>
+              <th>Input</th>
+              <th>Tone</th>
+              <th>Location</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>W8CUL</strong></td>
+              <td>145.450 MHz</td>
+              <td>144.850 MHz</td>
+              <td>100.0 Hz</td>
+              <td>Morgantown</td>
+              <td><button class="btn btn-sm btn-outline-wvu-blue copy-btn" data-copy="145.450" title="Copy frequency"><span class="fa-solid fa-copy" aria-hidden="true"></span></button></td>
+            </tr>
+            <tr>
+              <td><strong>K8LN</strong></td>
+              <td>147.090 MHz</td>
+              <td>147.690 MHz</td>
+              <td>131.8 Hz</td>
+              <td>Morgantown</td>
+              <td><button class="btn btn-sm btn-outline-wvu-blue copy-btn" data-copy="147.090" title="Copy frequency"><span class="fa-solid fa-copy" aria-hidden="true"></span></button></td>
+            </tr>
+            <tr>
+              <td><strong>WV8MON</strong></td>
+              <td>146.790 MHz</td>
+              <td>146.190 MHz</td>
+              <td>141.3 Hz</td>
+              <td>Morgantown</td>
+              <td><button class="btn btn-sm btn-outline-wvu-blue copy-btn" data-copy="146.790" title="Copy frequency"><span class="fa-solid fa-copy" aria-hidden="true"></span></button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="alert alert-info">
+        <span class="fa-solid fa-info-circle me-2" aria-hidden="true"></span>
+        <strong>Simplex Calling Frequencies:</strong> 146.520 MHz (2m National) | 446.000 MHz (70cm National)
+      </div>
+    </section>
+
+    <!-- Tabbed Resources -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-folder-open text-wvu-gold me-2" aria-hidden="true"></span>
+        Resources by Category
+      </h2>
+
+      <!-- Tab Navigation -->
+      <ul class="nav nav-tabs mb-4" id="resourceTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="study-tab" data-bs-toggle="tab" data-bs-target="#study" type="button" role="tab" aria-controls="study" aria-selected="true">
+            <span class="fa-solid fa-book me-1" aria-hidden="true"></span>
+            Study Materials
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="software-tab" data-bs-toggle="tab" data-bs-target="#software" type="button" role="tab" aria-controls="software" aria-selected="false">
+            <span class="fa-solid fa-laptop me-1" aria-hidden="true"></span>
+            Software
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab" aria-controls="documents" aria-selected="false">
+            <span class="fa-solid fa-file-alt me-1" aria-hidden="true"></span>
+            Documents
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="external-tab" data-bs-toggle="tab" data-bs-target="#external" type="button" role="tab" aria-controls="external" aria-selected="false">
+            <span class="fa-solid fa-external-link-alt me-1" aria-hidden="true"></span>
+            External Links
+          </button>
+        </li>
+      </ul>
+
+      <!-- Tab Content -->
+      <div class="tab-content" id="resourceTabsContent">
+        <!-- Study Materials Tab -->
+        <div class="tab-pane fade show active" id="study" role="tabpanel" aria-labelledby="study-tab">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 border-wvu-gold">
+                <div class="position-absolute top-0 end-0 m-2">
+                  <span class="badge bg-wvu-gold text-dark"><span class="fa-solid fa-star" aria-hidden="true"></span> Recommended</span>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h5">HamStudy.org</h3>
+                  <p class="card-text text-muted small">Free online study tool with flashcards and practice exams for all license classes</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <a href="https://hamstudy.org/" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                    <span class="fa-solid fa-external-link-alt me-1" aria-hidden="true"></span> Visit Site
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title h5">ARRL License Manual</h3>
+                  <p class="card-text text-muted small">The official study guide from ARRL for Technician, General, and Extra classes</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <a href="https://www.arrl.org/shop/Licensing-Education-Training" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                    <span class="fa-solid fa-external-link-alt me-1" aria-hidden="true"></span> Visit Site
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title h5">KB6NU Study Guides</h3>
+                  <p class="card-text text-muted small">Popular 'No-Nonsense' study guides - Technician guide is free!</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <a href="https://www.kb6nu.com/study-guides/" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                    <span class="fa-solid fa-external-link-alt me-1" aria-hidden="true"></span> Visit Site
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title h5">AA9PW Practice Exams</h3>
+                  <p class="card-text text-muted small">Free online practice exams with question pool explanations</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <a href="https://aa9pw.com/" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                    <span class="fa-solid fa-external-link-alt me-1" aria-hidden="true"></span> Visit Site
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Software Tab -->
+        <div class="tab-pane fade" id="software" role="tabpanel" aria-labelledby="software-tab">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 border-wvu-gold">
+                <div class="position-absolute top-0 end-0 m-2">
+                  <span class="badge bg-wvu-gold text-dark"><span class="fa-solid fa-star" aria-hidden="true"></span> Recommended</span>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h5">CHIRP</h3>
+                  <p class="card-text text-muted small">Free radio programming software for Baofeng and other HTs</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <a href="https://chirp.danplanet.com/" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                    <span class="fa-solid fa-download me-1" aria-hidden="true"></span> Download
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title h5">WSJT-X</h3>
+                  <p class="card-text text-muted small">Popular software for weak signal digital modes (FT8, JT65, etc.)</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <a href="https://wsjt.sourceforge.io/wsjtx.html" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                    <span class="fa-solid fa-download me-1" aria-hidden="true"></span> Download
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title h5">Fldigi</h3>
+                  <p class="card-text text-muted small">Digital mode software supporting PSK31, RTTY, and many other modes</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <a href="http://www.w1hkj.com/" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                    <span class="fa-solid fa-download me-1" aria-hidden="true"></span> Download
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title h5">SDR#</h3>
+                  <p class="card-text text-muted small">Software defined radio application for RTL-SDR dongles</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <a href="https://airspy.com/download/" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                    <span class="fa-solid fa-download me-1" aria-hidden="true"></span> Download
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title h5">JS8Call</h3>
+                  <p class="card-text text-muted small">Keyboard-to-keyboard messaging using weak signal propagation</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <a href="http://js8call.com/" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                    <span class="fa-solid fa-download me-1" aria-hidden="true"></span> Download
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Documents Tab -->
+        <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title h5">Club Constitution</h3>
+                  <p class="card-text text-muted small">W8CUL club constitution and bylaws</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <span class="text-muted small">Coming soon</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title h5">Membership Form</h3>
+                  <p class="card-text text-muted small">Form to join the WVU Amateur Radio Club</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <a href="/membership/join/" class="btn btn-outline-wvu-blue btn-sm">
+                    Join Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title h5">Equipment Checkout Policy</h3>
+                  <p class="card-text text-muted small">Guidelines for borrowing club equipment</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <span class="text-muted small">Coming soon</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- External Links Tab -->
+        <div class="tab-pane fade" id="external" role="tabpanel" aria-labelledby="external-tab">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 border-wvu-gold">
+                <div class="position-absolute top-0 end-0 m-2">
+                  <span class="badge bg-wvu-gold text-dark"><span class="fa-solid fa-star" aria-hidden="true"></span> Essential</span>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h5">ARRL</h3>
+                  <p class="card-text text-muted small">American Radio Relay League - The national association for amateur radio</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <a href="https://www.arrl.org/" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                    <span class="fa-solid fa-external-link-alt me-1" aria-hidden="true"></span> Visit Site
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title h5">QRZ.com</h3>
+                  <p class="card-text text-muted small">Callsign lookup database and amateur radio community</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <a href="https://www.qrz.com/" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                    <span class="fa-solid fa-external-link-alt me-1" aria-hidden="true"></span> Visit Site
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title h5">FCC ULS</h3>
+                  <p class="card-text text-muted small">FCC Universal Licensing System - Look up and manage your license</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <a href="https://wireless2.fcc.gov/UlsApp/UlsSearch/searchLicense.jsp" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                    <span class="fa-solid fa-external-link-alt me-1" aria-hidden="true"></span> Visit Site
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title h5">Logbook of The World</h3>
+                  <p class="card-text text-muted small">ARRL's electronic QSL confirmation system</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <a href="https://lotw.arrl.org/" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                    <span class="fa-solid fa-external-link-alt me-1" aria-hidden="true"></span> Visit Site
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title h5">PSK Reporter</h3>
+                  <p class="card-text text-muted small">Real-time digital mode propagation map</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <a href="https://pskreporter.info/" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                    <span class="fa-solid fa-external-link-alt me-1" aria-hidden="true"></span> Visit Site
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title h5">DX Maps</h3>
+                  <p class="card-text text-muted small">Real-time propagation maps and DX cluster</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <a href="https://www.dxmaps.com/" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                    <span class="fa-solid fa-external-link-alt me-1" aria-hidden="true"></span> Visit Site
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Need Help Section -->
+    <section class="text-center py-5 bg-light rounded">
+      <h2 class="h4 mb-3">Need Help Finding Something?</h2>
+      <p class="text-muted mb-4">Can't find what you're looking for? Ask a club officer or join our Discord!</p>
+      <a href="https://discord.gg/mnHW67hShz" class="btn btn-wvu-blue me-2" target="_blank" rel="noopener">
+        <span class="fa-brands fa-discord me-1" aria-hidden="true"></span>
+        Join Discord
+      </a>
+      <a href="/contact/" class="btn btn-outline-wvu-blue">
+        <span class="fa-solid fa-envelope me-1" aria-hidden="true"></span>
+        Contact Us
+      </a>
+    </section>
+
   </div>
 </main>
+
+<!-- Copy to Clipboard Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.copy-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const text = this.dataset.copy;
+            navigator.clipboard.writeText(text).then(function() {
+                const originalHtml = btn.innerHTML;
+                btn.innerHTML = '<span class="fa-solid fa-check" aria-hidden="true"></span>';
+                setTimeout(function() {
+                    btn.innerHTML = originalHtml;
+                }, 1500);
+            });
+        });
+    });
+});
+</script>
 
 
 <footer class="py-4 bg-light wvu-z-index-content lh-lg">

@@ -1,0 +1,189 @@
+# WVU Amateur Radio Club Member Resources
+# Edit this file to update resources across the site
+
+categories:
+  - id: study
+    name: Study Materials
+    icon: fa-book
+    description: Resources to help you prepare for your amateur radio license exams
+
+  - id: software
+    name: Software & Tools
+    icon: fa-laptop
+    description: Useful software for amateur radio operation
+
+  - id: documents
+    name: Club Documents
+    icon: fa-file-alt
+    description: Official club documents and forms
+
+  - id: external
+    name: External Links
+    icon: fa-external-link-alt
+    description: Useful amateur radio websites and organizations
+
+resources:
+  # Study Materials
+  - id: hamstudy
+    name: HamStudy.org
+    category: study
+    description: Free online study tool with flashcards and practice exams for all license classes
+    url: https://hamstudy.org/
+    featured: true
+
+  - id: arrl-manual
+    name: ARRL Ham Radio License Manual
+    category: study
+    description: The official study guide from ARRL for Technician, General, and Extra classes
+    url: https://www.arrl.org/shop/Licensing-Education-Training
+
+  - id: kb6nu-guides
+    name: KB6NU Study Guides
+    category: study
+    description: "Popular 'No-Nonsense' study guides - Technician guide is free!"
+    url: https://www.kb6nu.com/study-guides/
+
+  - id: practice-exams
+    name: AA9PW Practice Exams
+    category: study
+    description: Free online practice exams with question pool explanations
+    url: https://aa9pw.com/
+
+  - id: hamexam-app
+    name: Ham Radio Exam Mobile App
+    category: study
+    description: Study on the go with mobile apps for iOS and Android
+    url: https://apps.apple.com/us/app/ham-radio-exam-tech/id601991935
+
+  # Software & Tools
+  - id: wsjt-x
+    name: WSJT-X
+    category: software
+    description: Popular software for weak signal digital modes (FT8, JT65, etc.)
+    url: https://wsjt.sourceforge.io/wsjtx.html
+
+  - id: fldigi
+    name: Fldigi
+    category: software
+    description: Digital mode software supporting PSK31, RTTY, and many other modes
+    url: http://www.w1hkj.com/
+
+  - id: chirp
+    name: CHIRP
+    category: software
+    description: Free radio programming software for Baofeng and other HTs
+    url: https://chirp.danplanet.com/
+    featured: true
+
+  - id: sdr-sharp
+    name: SDR#
+    category: software
+    description: Software defined radio application for RTL-SDR dongles
+    url: https://airspy.com/download/
+
+  - id: gridtracker
+    name: GridTracker
+    category: software
+    description: Map-based companion program for WSJT-X digital modes
+    url: https://gridtracker.org/
+
+  - id: js8call
+    name: JS8Call
+    category: software
+    description: Keyboard-to-keyboard messaging using weak signal propagation
+    url: http://js8call.com/
+
+  # Club Documents
+  - id: constitution
+    name: Club Constitution
+    category: documents
+    description: W8CUL club constitution and bylaws
+    url: "#"
+
+  - id: membership-form
+    name: Membership Form
+    category: documents
+    description: Form to join the WVU Amateur Radio Club
+    url: /membership/join/
+
+  - id: equipment-checkout
+    name: Equipment Checkout Policy
+    category: documents
+    description: Guidelines for borrowing club equipment
+    url: "#"
+
+  # External Links
+  - id: arrl
+    name: ARRL
+    category: external
+    description: American Radio Relay League - The national association for amateur radio
+    url: https://www.arrl.org/
+    featured: true
+
+  - id: qrz
+    name: QRZ.com
+    category: external
+    description: Callsign lookup database and amateur radio community
+    url: https://www.qrz.com/
+
+  - id: fcc-uls
+    name: FCC ULS
+    category: external
+    description: FCC Universal Licensing System - Look up and manage your license
+    url: https://wireless2.fcc.gov/UlsApp/UlsSearch/searchLicense.jsp
+
+  - id: lotw
+    name: Logbook of The World
+    category: external
+    description: ARRL's electronic QSL confirmation system
+    url: https://lotw.arrl.org/
+
+  - id: eqsl
+    name: eQSL.cc
+    category: external
+    description: Electronic QSL card exchange service
+    url: https://www.eqsl.cc/
+
+  - id: dxmaps
+    name: DX Maps
+    category: external
+    description: Real-time propagation maps and DX cluster
+    url: https://www.dxmaps.com/
+
+  - id: pskreporter
+    name: PSK Reporter
+    category: external
+    description: Real-time digital mode propagation map
+    url: https://pskreporter.info/
+
+# Club Repeater Frequencies
+repeaters:
+  - callsign: W8CUL
+    output: "145.450"
+    input: "144.850"
+    tone: "100.0"
+    location: Morgantown
+    description: Club's primary repeater
+
+  - callsign: K8LN
+    output: "147.090"
+    input: "147.690"
+    tone: "131.8"
+    location: Morgantown
+    description: Local area repeater
+
+  - callsign: WV8MON
+    output: "146.790"
+    input: "146.190"
+    tone: "141.3"
+    location: Morgantown
+    description: Monongalia County ARES
+
+# Common Simplex Frequencies
+simplex:
+  - frequency: "146.520"
+    name: National Calling Frequency (2m)
+  - frequency: "446.000"
+    name: National Calling Frequency (70cm)
+  - frequency: "144.200"
+    name: SSB Calling Frequency (2m)

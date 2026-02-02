@@ -1,0 +1,28 @@
+{% comment %}
+Resource Card Include
+Usage: {% include resource-card.html resource=resource %}
+{% endcomment %}
+
+<div class="col-md-6 col-lg-4 mb-4 resource-item" data-category="{{ include.resource.category }}">
+    <div class="card h-100 {% if include.resource.featured %}border-wvu-gold{% endif %}">
+        {% if include.resource.featured %}
+        <div class="position-absolute top-0 end-0 m-2">
+            <span class="badge bg-wvu-gold text-dark">
+                <span class="fa-solid fa-star" aria-hidden="true"></span> Recommended
+            </span>
+        </div>
+        {% endif %}
+        <div class="card-body">
+            <h3 class="card-title h5">{{ include.resource.name }}</h3>
+            <p class="card-text text-muted small">{{ include.resource.description }}</p>
+        </div>
+        <div class="card-footer bg-transparent">
+            <a href="{{ include.resource.url }}" class="btn btn-outline-wvu-blue btn-sm" {% if include.resource.url contains 'http' %}target="_blank" rel="noopener"{% endif %}>
+                {% if include.resource.url contains 'http' %}
+                <span class="fa-solid fa-external-link-alt me-1" aria-hidden="true"></span>
+                {% endif %}
+                View Resource
+            </a>
+        </div>
+    </div>
+</div>

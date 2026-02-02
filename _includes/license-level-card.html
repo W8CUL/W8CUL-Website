@@ -1,0 +1,54 @@
+{% comment %}
+License Level Card Include
+Usage: {% include license-level-card.html level="technician" title="Technician" privileges="..." %}
+{% endcomment %}
+
+<div class="card h-100 license-card {% if include.featured %}border-wvu-gold{% endif %}">
+    {% if include.featured %}
+    <div class="card-header bg-wvu-gold text-dark text-center py-2">
+        <span class="fa-solid fa-star me-1" aria-hidden="true"></span>
+        Most Popular Starting Point
+    </div>
+    {% endif %}
+    <div class="card-body">
+        <h3 class="card-title h4 text-center text-wvu-blue">{{ include.title }}</h3>
+        <p class="text-center text-muted mb-3">{{ include.subtitle }}</p>
+
+        <div class="mb-3">
+            <h4 class="h6">
+                <span class="fa-solid fa-radio text-wvu-gold me-2" aria-hidden="true"></span>
+                Privileges
+            </h4>
+            <ul class="list-unstyled small">
+                {% for privilege in include.privileges %}
+                <li class="mb-1">
+                    <span class="fa-solid fa-check text-success me-2" aria-hidden="true"></span>
+                    {{ privilege }}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="mb-3">
+            <h4 class="h6">
+                <span class="fa-solid fa-wave-square text-wvu-gold me-2" aria-hidden="true"></span>
+                Band Access
+            </h4>
+            <p class="small mb-0">{{ include.bands }}</p>
+        </div>
+
+        <div class="mb-3">
+            <h4 class="h6">
+                <span class="fa-solid fa-clipboard-question text-wvu-gold me-2" aria-hidden="true"></span>
+                Exam Details
+            </h4>
+            <p class="small mb-0">{{ include.exam }}</p>
+        </div>
+    </div>
+    <div class="card-footer bg-transparent text-center">
+        <a href="{{ include.study_link }}" class="btn btn-wvu-blue btn-sm" target="_blank" rel="noopener">
+            <span class="fa-solid fa-book-open me-1" aria-hidden="true"></span>
+            Study for {{ include.title }}
+        </a>
+    </div>
+</div>

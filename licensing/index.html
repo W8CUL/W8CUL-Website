@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="/assets/W8CUL.ico"/>
 <title>Licensing | WVU Amateur Radio Club</title>
-<meta name="description" content="Official website of the WVU Amateur Radio Club - W8CUL">
+<meta name="description" content="Get your amateur radio license with help from the WVU Amateur Radio Club - W8CUL">
 
 <!-- New Relic Browser Monitoring -->
 <script type="text/javascript">
@@ -34,6 +34,36 @@ NREUM.info = {
     color: #fff;
     font-weight: 600;
     border-bottom: 2px solid var(--bs-wvu-gold);
+}
+.license-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.license-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.license-card.border-wvu-gold {
+    border: 2px solid var(--bs-wvu-gold) !important;
+}
+.progression-step {
+    position: relative;
+}
+.progression-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--bs-wvu-gold), var(--bs-wvu-blue));
+}
+@media (max-width: 767px) {
+    .progression-step:not(:last-child)::after {
+        display: none;
+    }
+}
+.resource-card {
+    border-left: 3px solid var(--bs-wvu-gold);
 }
 </style>
 
@@ -118,120 +148,120 @@ NREUM.info = {
 
             <ul id="wvu-site-nav__items"
                 class="wvu-site-nav__items js-wvu-site-nav-items position-static list-unstyled d-lg-flex align-items-lg-center flex-lg-wrap mb-0">
-                
-                
+
+
                 <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/">Home</a></li>
-                
-                
-                
+
+
+
                 <li class="wvu-site-nav__menu-item-has-children position-relative d-lg-flex">
                     <a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/membership/">Members</a>
                     <ul class="wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0 wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0--level-1">
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/membership/join/">Join</a></li>
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/membership/resources/">Resources</a></li>
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/membership/alumni/">Alumni</a></li>
-                        
+
                     </ul>
                 </li>
-                
-                
-                
+
+
+
                 <li class="wvu-site-nav__menu-item-has-children position-relative d-lg-flex">
                     <a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/projects/">Projects</a>
                     <ul class="wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0 wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0--level-1">
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/projects/Balloon_Project/Balloon_Project/">Balloon Project</a></li>
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/projects/APRS_Tracker/APRS_Tracker/">APRS Tracker</a></li>
-                        
+
                     </ul>
                 </li>
-                
-                
-                
+
+
+
                 <li class="wvu-site-nav__menu-item-has-children position-relative d-lg-flex">
                     <a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/shack/">The Shack</a>
                     <ul class="wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0 wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0--level-1">
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/shack/equipment/">Equipment</a></li>
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="https://wvuarc.statler.wvu.edu/hamclock/" target="_blank" rel="noopener">Hamclock</a></li>
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/shack/logbook/">QSL Logbook</a></li>
-                        
+
                     </ul>
                 </li>
-                
-                
-                
+
+
+
                 <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/events/">Events</a></li>
-                
-                
-                
+
+
+
                 <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1 active"
                        aria-current="page"
                        href="/licensing/">Licensing</a></li>
-                
-                
-                
+
+
+
                 <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/officers/">Officers</a></li>
-                
-                
-                
+
+
+
                 <li class="wvu-site-nav__menu-item-has-children position-relative d-lg-flex">
                     <a class="nav-link px-1 py-2 fw-normal flex-grow-1"
-                       
+
                        href="/sponsors/">Sponsors</a>
                     <ul class="wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0 wvu-site-nav__sub-menu small bg-wvu-accent--blue-dark list-unstyled ms-2 ms-lg-0--level-1">
-                        
+
                         <li><a class="nav-link px-1 py-2 fw-normal flex-grow-1"
                                href="/sponsors/donate/">Donate</a></li>
-                        
+
                     </ul>
                 </li>
-                
-                
+
+
             </ul>
 
             <!-- Social Links -->
             <div class="d-flex align-items-center">
                 <ul class="list-inline mb-0 me-2">
-                    
+
                     <li class="list-inline-item">
                         <a class="mb-0 text-decoration-none text-white-50" href="https://discord.gg/mnHW67hShz">
                             <span class="fab fa-discord"></span><span class="visually-hidden">Discord</span>
                         </a>
                     </li>
-                    
+
                     <li class="list-inline-item">
                         <a class="mb-0 text-decoration-none text-white-50" href="https://www.instagram.com/w8cul">
                             <span class="fab fa-instagram"></span><span class="visually-hidden">Instagram</span>
                         </a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -260,7 +290,458 @@ NREUM.info = {
 
 <main id="wvu-main-content" class="py-5">
   <div class="container">
-    <p class="lead">This page is under construction. Check back soon!</p>
+
+    <!-- What is Ham Radio Section -->
+    <section class="mb-5">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h2 class="h3 mb-3">
+            <span class="fa-solid fa-radio text-wvu-gold me-2" aria-hidden="true"></span>
+            What is Amateur Radio?
+          </h2>
+          <p class="lead">Amateur (ham) radio is a popular hobby and service that brings people, electronics, and communication together.</p>
+          <p>Ham radio operators use various types of equipment to communicate across town, around the world, and even into space - all without the Internet or cell phones. When disasters knock out other communication channels, ham radio operators can provide critical emergency communications.</p>
+          <p>Getting your amateur radio license opens the door to:</p>
+          <ul>
+            <li>Making contacts with people around the world</li>
+            <li>Building and experimenting with radio equipment</li>
+            <li>Participating in emergency communications</li>
+            <li>Competing in radio contests</li>
+            <li>Satellite and space communications</li>
+            <li>Technical experimentation and learning</li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <div class="bg-light rounded p-4 text-center">
+            <span class="fa-solid fa-satellite-dish fa-4x text-wvu-blue mb-3" aria-hidden="true"></span>
+            <h3 class="h5">Ready to Get Started?</h3>
+            <p class="small text-muted mb-3">Join our study sessions every Thursday at 6 PM</p>
+            <a href="/events/" class="btn btn-wvu-gold text-dark">
+              <span class="fa-solid fa-calendar me-1" aria-hidden="true"></span>
+              See Schedule
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- License Progression Visual -->
+    <section class="mb-5 py-4 bg-light rounded">
+      <div class="container">
+        <h2 class="h3 text-center mb-4">
+          <span class="fa-solid fa-stairs text-wvu-gold me-2" aria-hidden="true"></span>
+          License Progression Path
+        </h2>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-3 mb-4 mb-md-0 progression-step">
+            <div class="rounded-circle bg-wvu-blue text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+              <span class="fa-solid fa-seedling fa-2x" aria-hidden="true"></span>
+            </div>
+            <h3 class="h5">Technician</h3>
+            <p class="small text-muted mb-0">Entry Level</p>
+            <p class="small">35 questions</p>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0 progression-step">
+            <div class="rounded-circle bg-wvu-gold text-dark d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+              <span class="fa-solid fa-tree fa-2x" aria-hidden="true"></span>
+            </div>
+            <h3 class="h5">General</h3>
+            <p class="small text-muted mb-0">Intermediate</p>
+            <p class="small">35 questions</p>
+          </div>
+          <div class="col-md-3 progression-step">
+            <div class="rounded-circle bg-wvu-blue text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+              <span class="fa-solid fa-mountain-sun fa-2x" aria-hidden="true"></span>
+            </div>
+            <h3 class="h5">Amateur Extra</h3>
+            <p class="small text-muted mb-0">Advanced</p>
+            <p class="small">50 questions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- License Class Comparison Cards -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-layer-group text-wvu-gold me-2" aria-hidden="true"></span>
+        License Classes Compared
+      </h2>
+      <div class="row g-4">
+        <!-- Technician Card -->
+        <div class="col-md-4">
+          <div class="card h-100 license-card border-wvu-gold">
+            <div class="card-header bg-wvu-gold text-dark text-center py-2">
+              <span class="fa-solid fa-star me-1" aria-hidden="true"></span>
+              Most Popular Starting Point
+            </div>
+            <div class="card-body">
+              <h3 class="card-title h4 text-center text-wvu-blue">Technician</h3>
+              <p class="text-center text-muted mb-3">Entry-level license</p>
+
+              <div class="mb-3">
+                <h4 class="h6">
+                  <span class="fa-solid fa-radio text-wvu-gold me-2" aria-hidden="true"></span>
+                  Privileges
+                </h4>
+                <ul class="list-unstyled small">
+                  <li class="mb-1"><span class="fa-solid fa-check text-success me-2" aria-hidden="true"></span>All amateur privileges above 30 MHz</li>
+                  <li class="mb-1"><span class="fa-solid fa-check text-success me-2" aria-hidden="true"></span>Local repeater access (VHF/UHF)</li>
+                  <li class="mb-1"><span class="fa-solid fa-check text-success me-2" aria-hidden="true"></span>Satellite communications</li>
+                  <li class="mb-1"><span class="fa-solid fa-check text-success me-2" aria-hidden="true"></span>Limited HF privileges (10, 15, 40, 80m)</li>
+                </ul>
+              </div>
+
+              <div class="mb-3">
+                <h4 class="h6">
+                  <span class="fa-solid fa-wave-square text-wvu-gold me-2" aria-hidden="true"></span>
+                  Band Access
+                </h4>
+                <p class="small mb-0">VHF/UHF (2m, 70cm) + portions of 10, 15, 40, 80 meters</p>
+              </div>
+
+              <div class="mb-3">
+                <h4 class="h6">
+                  <span class="fa-solid fa-clipboard-question text-wvu-gold me-2" aria-hidden="true"></span>
+                  Exam Details
+                </h4>
+                <p class="small mb-0">35 multiple choice questions, 26 correct to pass (74%)</p>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent text-center">
+              <a href="https://hamstudy.org/tech2022" class="btn btn-wvu-blue btn-sm" target="_blank" rel="noopener">
+                <span class="fa-solid fa-book-open me-1" aria-hidden="true"></span>
+                Study for Technician
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- General Card -->
+        <div class="col-md-4">
+          <div class="card h-100 license-card">
+            <div class="card-body">
+              <h3 class="card-title h4 text-center text-wvu-blue">General</h3>
+              <p class="text-center text-muted mb-3">Intermediate license</p>
+
+              <div class="mb-3">
+                <h4 class="h6">
+                  <span class="fa-solid fa-radio text-wvu-gold me-2" aria-hidden="true"></span>
+                  Privileges
+                </h4>
+                <ul class="list-unstyled small">
+                  <li class="mb-1"><span class="fa-solid fa-check text-success me-2" aria-hidden="true"></span>All Technician privileges</li>
+                  <li class="mb-1"><span class="fa-solid fa-check text-success me-2" aria-hidden="true"></span>Most HF band privileges</li>
+                  <li class="mb-1"><span class="fa-solid fa-check text-success me-2" aria-hidden="true"></span>Worldwide communication capability</li>
+                  <li class="mb-1"><span class="fa-solid fa-check text-success me-2" aria-hidden="true"></span>DX (long-distance) contacts</li>
+                </ul>
+              </div>
+
+              <div class="mb-3">
+                <h4 class="h6">
+                  <span class="fa-solid fa-wave-square text-wvu-gold me-2" aria-hidden="true"></span>
+                  Band Access
+                </h4>
+                <p class="small mb-0">Voice privileges on 160, 80, 40, 20, 17, 15, 12, 10 meters</p>
+              </div>
+
+              <div class="mb-3">
+                <h4 class="h6">
+                  <span class="fa-solid fa-clipboard-question text-wvu-gold me-2" aria-hidden="true"></span>
+                  Exam Details
+                </h4>
+                <p class="small mb-0">35 multiple choice questions, 26 correct to pass (74%). Requires Technician license.</p>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent text-center">
+              <a href="https://hamstudy.org/general2023" class="btn btn-wvu-blue btn-sm" target="_blank" rel="noopener">
+                <span class="fa-solid fa-book-open me-1" aria-hidden="true"></span>
+                Study for General
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Extra Card -->
+        <div class="col-md-4">
+          <div class="card h-100 license-card">
+            <div class="card-body">
+              <h3 class="card-title h4 text-center text-wvu-blue">Amateur Extra</h3>
+              <p class="text-center text-muted mb-3">Highest license class</p>
+
+              <div class="mb-3">
+                <h4 class="h6">
+                  <span class="fa-solid fa-radio text-wvu-gold me-2" aria-hidden="true"></span>
+                  Privileges
+                </h4>
+                <ul class="list-unstyled small">
+                  <li class="mb-1"><span class="fa-solid fa-check text-success me-2" aria-hidden="true"></span>All amateur radio privileges</li>
+                  <li class="mb-1"><span class="fa-solid fa-check text-success me-2" aria-hidden="true"></span>Exclusive Extra-class band segments</li>
+                  <li class="mb-1"><span class="fa-solid fa-check text-success me-2" aria-hidden="true"></span>Can volunteer as VE examiner</li>
+                  <li class="mb-1"><span class="fa-solid fa-check text-success me-2" aria-hidden="true"></span>Vanity callsign eligibility (1x2, 2x1)</li>
+                </ul>
+              </div>
+
+              <div class="mb-3">
+                <h4 class="h6">
+                  <span class="fa-solid fa-wave-square text-wvu-gold me-2" aria-hidden="true"></span>
+                  Band Access
+                </h4>
+                <p class="small mb-0">Full privileges on all amateur bands, including exclusive Extra portions</p>
+              </div>
+
+              <div class="mb-3">
+                <h4 class="h6">
+                  <span class="fa-solid fa-clipboard-question text-wvu-gold me-2" aria-hidden="true"></span>
+                  Exam Details
+                </h4>
+                <p class="small mb-0">50 multiple choice questions, 37 correct to pass (74%). Requires General license.</p>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent text-center">
+              <a href="https://hamstudy.org/extra2024" class="btn btn-wvu-blue btn-sm" target="_blank" rel="noopener">
+                <span class="fa-solid fa-book-open me-1" aria-hidden="true"></span>
+                Study for Extra
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Study Resources -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-book text-wvu-gold me-2" aria-hidden="true"></span>
+        Study Resources
+      </h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 resource-card">
+            <div class="card-body">
+              <h3 class="h5">
+                <span class="fa-solid fa-globe text-wvu-blue me-2" aria-hidden="true"></span>
+                HamStudy.org
+              </h3>
+              <p class="text-muted">Free online study tool with practice exams, flashcards, and progress tracking. Our recommended resource!</p>
+              <a href="https://hamstudy.org/" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                Visit HamStudy.org
+                <span class="fa-solid fa-external-link-alt ms-1" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 resource-card">
+            <div class="card-body">
+              <h3 class="h5">
+                <span class="fa-solid fa-book-open text-wvu-blue me-2" aria-hidden="true"></span>
+                ARRL License Manual
+              </h3>
+              <p class="text-muted">The official study guide from the American Radio Relay League. Available in print and digital formats.</p>
+              <a href="https://www.arrl.org/shop/Ham-Radio-License-Manual/" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                Get the Manual
+                <span class="fa-solid fa-external-link-alt ms-1" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 resource-card">
+            <div class="card-body">
+              <h3 class="h5">
+                <span class="fa-solid fa-mobile-screen text-wvu-blue me-2" aria-hidden="true"></span>
+                Ham Radio Exam Apps
+              </h3>
+              <p class="text-muted">Study on the go with mobile apps like "Ham Radio Exam" (iOS/Android) or "HamStudy" mobile app.</p>
+              <a href="https://apps.apple.com/us/app/ham-radio-exam-tech/id601991935" class="btn btn-outline-wvu-blue btn-sm me-2" target="_blank" rel="noopener">
+                iOS App
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.iversoft.ham.study" class="btn btn-outline-wvu-blue btn-sm" target="_blank" rel="noopener">
+                Android App
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 resource-card">
+            <div class="card-body">
+              <h3 class="h5">
+                <span class="fa-solid fa-users text-wvu-blue me-2" aria-hidden="true"></span>
+                W8CUL Study Sessions
+              </h3>
+              <p class="text-muted">Join our weekly study sessions every Thursday at 6 PM in ESB 529. We'll help you prepare for your exam!</p>
+              <a href="/events/" class="btn btn-outline-wvu-blue btn-sm">
+                View Schedule
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exam Information -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-clipboard-check text-wvu-gold me-2" aria-hidden="true"></span>
+        Taking Your Exam
+      </h2>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="h5 mb-3">What to Bring</h3>
+              <ul class="mb-4">
+                <li><strong>$15 exam fee</strong> (cash preferred)</li>
+                <li><strong>Two forms of ID</strong> (one must be a photo ID)</li>
+                <li><strong>FRN (FCC Registration Number)</strong> - Required! <a href="https://apps.fcc.gov/coresWeb/publicHome.do" target="_blank" rel="noopener">Register here</a></li>
+                <li>Calculator (no memory functions)</li>
+                <li>Pencils and scratch paper (usually provided)</li>
+                <li>Copy of your current license (if upgrading)</li>
+              </ul>
+
+              <h3 class="h5 mb-3">Before the Exam</h3>
+              <ol class="mb-4">
+                <li><strong>Get your FRN</strong> from the FCC CORES system - this is mandatory!</li>
+                <li>Study using the resources above until you're consistently passing practice exams</li>
+                <li>Attend a W8CUL study session for extra help</li>
+                <li>Check our events page for the next exam date</li>
+              </ol>
+
+              <h3 class="h5 mb-3">On Exam Day</h3>
+              <p>Arrive 10-15 minutes early. The exam typically takes 30-60 minutes. If you pass, you can immediately take the next level exam at no additional cost!</p>
+
+              <div class="alert alert-info">
+                <span class="fa-solid fa-info-circle me-2" aria-hidden="true"></span>
+                <strong>Pro Tip:</strong> If you pass your Technician exam, consider taking the General exam the same day while the material is fresh. Many people upgrade on the same day!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card bg-wvu-blue text-white">
+            <div class="card-body text-center">
+              <span class="fa-solid fa-calendar-check fa-3x mb-3" aria-hidden="true"></span>
+              <h3 class="h5">Next VE Exam Session</h3>
+              <p class="mb-1"><strong>March 15, 2026</strong></p>
+              <p class="mb-1">10:00 AM</p>
+              <p class="small mb-3">ESB 529</p>
+              <a href="/events/" class="btn btn-wvu-gold text-dark">
+                <span class="fa-solid fa-calendar me-1" aria-hidden="true"></span>
+                See All Exam Dates
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="mb-5">
+      <h2 class="h3 mb-4">
+        <span class="fa-solid fa-circle-question text-wvu-gold me-2" aria-hidden="true"></span>
+        Frequently Asked Questions
+      </h2>
+      <div class="accordion" id="licensingFAQ">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+              How long does it take to get licensed?
+            </button>
+          </h3>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#licensingFAQ">
+            <div class="accordion-body">
+              Most people can prepare for the Technician exam in 2-4 weeks of casual study. After passing your exam, the FCC typically processes your license within 1-2 business days. Your callsign will appear in the FCC database, and you can start operating immediately!
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+              Do I need to know Morse code?
+            </button>
+          </h3>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#licensingFAQ">
+            <div class="accordion-body">
+              No! Morse code is no longer required for any amateur radio license class. While many hams enjoy learning and using CW (Morse code), it's completely optional. You can operate on voice, digital modes, and other technologies without knowing any Morse code.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+              How much does it cost to get started?
+            </button>
+          </h3>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#licensingFAQ">
+            <div class="accordion-body">
+              <ul>
+                <li><strong>Exam fee:</strong> $15 (one-time)</li>
+                <li><strong>FCC license fee:</strong> $35 (valid for 10 years)</li>
+                <li><strong>Basic handheld radio:</strong> $25-50 (Baofeng UV-5R is popular)</li>
+              </ul>
+              You can get on the air for under $100! As a club member, you'll also have access to the club's equipment in our shack.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+              Can I take the exam online?
+            </button>
+          </h3>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#licensingFAQ">
+            <div class="accordion-body">
+              Yes! Several VEC organizations offer fully remote online exams. However, we encourage you to take your exam in person with W8CUL - it's a great way to meet fellow hams, and our volunteer examiners are here to help you succeed. Check our events page for upcoming in-person exam sessions.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+              What's an FRN and why do I need one?
+            </button>
+          </h3>
+          <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#licensingFAQ">
+            <div class="accordion-body">
+              An FRN (FCC Registration Number) is a unique identifier assigned by the FCC. As of 2021, it's required before you can take an amateur radio exam. You can get one for free at <a href="https://apps.fcc.gov/coresWeb/publicHome.do" target="_blank" rel="noopener">the FCC CORES website</a>. Make sure to register and get your FRN before exam day!
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+              What if I fail the exam?
+            </button>
+          </h3>
+          <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#licensingFAQ">
+            <div class="accordion-body">
+              Don't worry! You can retake the exam at any future session. Many VEs will let you try again the same day if time permits (you may need to pay another exam fee). The question pool is public, so keep studying and you'll pass next time. Our study sessions can help you identify areas where you need more practice.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="text-center py-5 bg-wvu-blue text-white rounded">
+      <h2 class="h3 mb-3">Ready to Get Your License?</h2>
+      <p class="mb-4">Join our study sessions and be on the air in no time!</p>
+      <a href="/membership/join/" class="btn btn-wvu-gold btn-lg text-dark me-2">
+        <span class="fa-solid fa-user-plus me-1" aria-hidden="true"></span>
+        Join the Club
+      </a>
+      <a href="/events/" class="btn btn-outline-light btn-lg">
+        <span class="fa-solid fa-calendar me-1" aria-hidden="true"></span>
+        Study Sessions
+      </a>
+    </section>
+
   </div>
 </main>
 
@@ -388,9 +869,6 @@ const wvuEmergencyAlert = (() => {
     fetchEmergencyAlert();
 })();
 </script>
-
-<script>
-
 
 </body>
 </html>

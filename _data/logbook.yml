@@ -1,89 +1,78 @@
 # WVU Amateur Radio Club QSL Logbook Statistics
 # Edit this file to update logbook statistics
+# NOTE: Statistics and recent contacts below use XX placeholders until verified.
 
-# Current statistics (update periodically)
+# Current statistics (placeholder - update with real data)
 stats:
-  total_qsos: 2847
-  countries_worked: 67
-  states_worked: 48
-  grids_worked: 312
-  last_updated: "2026-01-15"
+  total_qsos: XX-NUMBER-XX
+  countries_worked: XX-NUMBER-XX
+  states_worked: XX-NUMBER-XX
+  grids_worked: XX-NUMBER-XX
+  last_updated: "XX-DATE-XX"
 
-# Recent notable contacts
+# Recent notable contacts (placeholder)
 recent_contacts:
-  - callsign: JA1ABC
-    location: Japan
-    band: "20m"
-    mode: FT8
-    date: "2026-01-14"
+  - callsign: XX-CALLSIGN-XX
+    location: XX-LOCATION-XX
+    band: "XX"
+    mode: XX
+    date: "XX-DATE-XX"
 
-  - callsign: VK2XYZ
-    location: Australia
-    band: "15m"
-    mode: SSB
-    date: "2026-01-12"
+  - callsign: XX-CALLSIGN-XX
+    location: XX-LOCATION-XX
+    band: "XX"
+    mode: XX
+    date: "XX-DATE-XX"
 
-  - callsign: EA8DEF
-    location: Canary Islands
-    band: "17m"
-    mode: FT8
-    date: "2026-01-10"
+  - callsign: XX-CALLSIGN-XX
+    location: XX-LOCATION-XX
+    band: "XX"
+    mode: XX
+    date: "XX-DATE-XX"
 
-  - callsign: ZL3QRS
-    location: New Zealand
-    band: "20m"
-    mode: CW
-    date: "2026-01-08"
+  - callsign: XX-CALLSIGN-XX
+    location: XX-LOCATION-XX
+    band: "XX"
+    mode: XX
+    date: "XX-DATE-XX"
 
-  - callsign: PY2GHI
-    location: Brazil
-    band: "10m"
-    mode: SSB
-    date: "2026-01-06"
+  - callsign: XX-CALLSIGN-XX
+    location: XX-LOCATION-XX
+    band: "XX"
+    mode: XX
+    date: "XX-DATE-XX"
 
-# DXCC entities confirmed
+# DXCC entities confirmed (placeholder list)
 dxcc_highlights:
-  - entity: Japan
-    prefix: JA
+  - entity: XX-LOCATION-XX
+    prefix: XX
     confirmed: true
-  - entity: Australia
-    prefix: VK
+  - entity: XX-LOCATION-XX
+    prefix: XX
     confirmed: true
-  - entity: Germany
-    prefix: DL
-    confirmed: true
-  - entity: United Kingdom
-    prefix: G
-    confirmed: true
-  - entity: Brazil
-    prefix: PY
-    confirmed: true
-  - entity: New Zealand
-    prefix: ZL
-    confirmed: true
-  - entity: South Africa
-    prefix: ZS
+  - entity: XX-LOCATION-XX
+    prefix: XX
     confirmed: true
 
-# Awards progress
+# Awards progress (placeholder)
 awards:
   - name: DXCC
-    current: 67
+    current: XX-NUMBER-XX
     goal: 100
     description: Work 100 DXCC entities
 
   - name: WAS
-    current: 48
+    current: XX-NUMBER-XX
     goal: 50
     description: Work All States
 
   - name: WAC
-    current: 6
+    current: XX-NUMBER-XX
     goal: 6
     description: Work All Continents
-    complete: true
+    complete: false
 
-# External log links
+# External log links (Club Log URL may need verification)
 external_logs:
   clublog:
     enabled: true

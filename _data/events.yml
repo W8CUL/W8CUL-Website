@@ -5,100 +5,48 @@
 recurring:
   - id: weekly-meeting
     name: Weekly Club Meeting
-    day: Tuesday
+    day: Thursday
     time: "7:00 PM"
-    location: "ESB 529 (The Shack)"
+    location: "AERB 135"
     description: "Join us for our weekly meeting! All experience levels welcome."
     type: meeting
 
-  - id: study-session
-    name: License Study Session
-    day: Thursday
-    time: "6:00 PM"
-    location: "ESB 529 (The Shack)"
-    description: "Study for your Technician, General, or Extra class license exam."
-    type: study
-
   - id: net-night
     name: W8CUL Net
-    day: Wednesday
-    time: "8:00 PM"
+    day: Thursday
+    time: "9:00 PM"
     location: "145.450 MHz Repeater"
     description: "Weekly on-air net. Check in and practice your radio skills!"
     type: net
 
-# Upcoming special events
+# Upcoming special events (add real events with confirmed dates)
+# Tech in A Day (TIAD): two per semester in AERB 135 — contact club for dates
 upcoming:
-  - id: field-day-2026
-    name: Field Day 2026
-    date: "2026-06-27"
-    end_date: "2026-06-28"
-    time: "2:00 PM"
-    location: "WVU Core Arboretum"
-    description: "ARRL Field Day - the largest amateur radio event of the year! Join us for 24 hours of emergency communications practice and fun."
+  - id: tiad
+    name: Tech in A Day (TIAD)
+    date: ""
+    time: "Contact club for schedule"
+    location: "AERB 135"
+    description: "Two Tech-in-A-Day events each semester. Study and test for your Technician license in one day. Contact the club for this semester's dates."
+    type: exam
+
+  - id: field-day
+    name: ARRL Field Day
+    date: ""
+    end_date: ""
+    time: "TBD"
+    location: "TBD"
+    description: "ARRL Field Day - the largest amateur radio event of the year. Check with the club for this year's date and location."
     type: special
     link: "https://www.arrl.org/field-day"
 
-  - id: ve-exam-spring
+  - id: ve-exam
     name: VE License Exam Session
-    date: "2026-03-15"
-    time: "10:00 AM"
-    location: "ESB 529"
-    description: "Walk-ins welcome! Bring $15 cash, two forms of ID, and your FRN if you have one."
+    date: ""
+    time: "Contact club for schedule"
+    location: "AERB 135"
+    description: "Walk-ins welcome when scheduled. Bring exam fee (confirm current amount), two forms of ID, and your FRN. Contact the club for upcoming exam dates."
     type: exam
-
-  - id: ve-exam-april
-    name: VE License Exam Session
-    date: "2026-04-19"
-    time: "10:00 AM"
-    location: "ESB 529"
-    description: "Walk-ins welcome! Bring $15 cash, two forms of ID, and your FRN if you have one."
-    type: exam
-
-  - id: winter-field-day
-    name: Winter Field Day
-    date: "2026-01-25"
-    end_date: "2026-01-26"
-    time: "2:00 PM"
-    location: "ESB 529 (The Shack)"
-    description: "Winter Field Day is a 24-hour amateur radio operating event. Bundle up and make contacts!"
-    type: special
-
-  - id: school-club-roundup
-    name: ARRL School Club Roundup
-    date: "2026-02-10"
-    end_date: "2026-02-14"
-    time: "All Day"
-    location: "ESB 529 (The Shack)"
-    description: "Compete with other school clubs across the country! Come help us make contacts."
-    type: contest
-
-  - id: hamfest-trip
-    name: Dayton Hamvention Trip
-    date: "2026-05-15"
-    end_date: "2026-05-17"
-    time: "TBD"
-    location: "Xenia, OH"
-    description: "Join us for the world's largest amateur radio gathering! Transportation available for members."
-    type: trip
-
-  - id: cq-ww-ssb
-    name: CQ World Wide DX Contest (SSB)
-    date: "2026-10-24"
-    end_date: "2026-10-25"
-    time: "All Weekend"
-    location: "ESB 529 (The Shack)"
-    description: "Work stations around the world in this major DX contest. All operators welcome!"
-    type: contest
-
-  - id: jota
-    name: Jamboree on the Air (JOTA)
-    date: "2026-10-17"
-    end_date: "2026-10-18"
-    time: "All Weekend"
-    location: "ESB 529 (The Shack)"
-    description: "Help introduce Scouts to amateur radio during this annual worldwide event."
-    type: outreach
 
 # Event type colors for filtering
 event_types:

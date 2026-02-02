@@ -1,136 +1,134 @@
 # WVU Amateur Radio Club Alumni Network
 # Edit this file to update alumni information
+# NOTE: All alumni data below uses XX placeholders until verified with real alumni.
 
-# Featured alumni spotlight
+# Featured alumni spotlight (placeholder)
 spotlight:
-  name: Dr. James Thompson
-  callsign: K8JT
-  graduation_year: 1998
-  degree: PhD Electrical Engineering
-  current_position: RF Systems Engineer at NASA Goddard
+  name: XX-NAME-XX
+  callsign: XX-CALLSIGN-XX
+  graduation_year: XX-YEAR-XX
+  degree: XX
+  current_position: XX-POSITION-XX at XX-COMPANY-XX
   bio: >
-    James was W8CUL president from 1996-1998 and helped establish the club's first
-    satellite ground station. His work at NASA includes designing communication
-    systems for deep space missions. He credits W8CUL with sparking his passion
-    for space communications.
-  quote: "The skills and friendships I developed at W8CUL launched my career in aerospace communications."
+    XX
+  quote: "XX"
 
-# Alumni by decade
+# Alumni by decade (placeholders)
 decades:
   - id: 2020s
     name: 2020s
     alumni:
-      - name: Sarah Chen
-        callsign: KE8ABC
-        graduation_year: 2023
-        degree: Computer Engineering
-        current_position: Software Engineer, Lockheed Martin
-        highlight: Led APRS tracker project
+      - name: XX-NAME-XX
+        callsign: XX-CALLSIGN-XX
+        graduation_year: XX-YEAR-XX
+        degree: XX
+        current_position: XX-POSITION-XX, XX-COMPANY-XX
+        highlight: XX
 
-      - name: Michael Rodriguez
-        callsign: N8MRZ
-        graduation_year: 2022
-        degree: Electrical Engineering
-        current_position: RF Engineer, L3Harris
-        highlight: Club president 2021-2022
+      - name: XX-NAME-XX
+        callsign: XX-CALLSIGN-XX
+        graduation_year: XX-YEAR-XX
+        degree: XX
+        current_position: XX-POSITION-XX, XX-COMPANY-XX
+        highlight: XX
 
-      - name: Emily Watson
-        callsign: KD8EW
-        graduation_year: 2021
-        degree: Physics
-        current_position: Graduate Student, MIT
-        highlight: Field Day coordinator
+      - name: XX-NAME-XX
+        callsign: XX-CALLSIGN-XX
+        graduation_year: XX-YEAR-XX
+        degree: XX
+        current_position: XX-POSITION-XX, XX-COMPANY-XX
+        highlight: XX
 
   - id: 2010s
     name: 2010s
     alumni:
-      - name: David Park
-        callsign: W8DPK
-        graduation_year: 2018
-        degree: Electrical Engineering
-        current_position: Systems Engineer, SpaceX
-        highlight: Started balloon project
+      - name: XX-NAME-XX
+        callsign: XX-CALLSIGN-XX
+        graduation_year: XX-YEAR-XX
+        degree: XX
+        current_position: XX-POSITION-XX, XX-COMPANY-XX
+        highlight: XX
 
-      - name: Jennifer Mills
-        callsign: KD8JM
-        graduation_year: 2015
-        degree: Computer Science
-        current_position: Lead Developer, Microsoft
-        highlight: Designed club website
+      - name: XX-NAME-XX
+        callsign: XX-CALLSIGN-XX
+        graduation_year: XX-YEAR-XX
+        degree: XX
+        current_position: XX-POSITION-XX, XX-COMPANY-XX
+        highlight: XX
 
-      - name: Robert Taylor
-        callsign: N8RT
-        graduation_year: 2012
-        degree: Mechanical Engineering
-        current_position: Project Manager, Boeing
-        highlight: Emergency communications coordinator
+      - name: XX-NAME-XX
+        callsign: XX-CALLSIGN-XX
+        graduation_year: XX-YEAR-XX
+        degree: XX
+        current_position: XX-POSITION-XX, XX-COMPANY-XX
+        highlight: XX
 
   - id: 2000s
     name: 2000s
     alumni:
-      - name: Dr. Amanda Foster
-        callsign: KB8AF
-        graduation_year: 2008
-        degree: PhD Physics
-        current_position: Research Scientist, NIST
-        highlight: Established VE testing program
+      - name: XX-NAME-XX
+        callsign: XX-CALLSIGN-XX
+        graduation_year: XX-YEAR-XX
+        degree: XX
+        current_position: XX-POSITION-XX, XX-COMPANY-XX
+        highlight: XX
 
-      - name: Christopher Lee
-        callsign: W8CL
-        graduation_year: 2005
-        degree: Electrical Engineering
-        current_position: Director of Engineering, Icom America
-        highlight: Contest operations manager
+      - name: XX-NAME-XX
+        callsign: XX-CALLSIGN-XX
+        graduation_year: XX-YEAR-XX
+        degree: XX
+        current_position: XX-POSITION-XX, XX-COMPANY-XX
+        highlight: XX
 
-      - name: Patricia Green
-        callsign: N8PG
-        graduation_year: 2002
-        degree: Aerospace Engineering
-        current_position: Flight Director, NASA JSC
-        highlight: Satellite communications pioneer
+      - name: XX-NAME-XX
+        callsign: XX-CALLSIGN-XX
+        graduation_year: XX-YEAR-XX
+        degree: XX
+        current_position: XX-POSITION-XX, XX-COMPANY-XX
+        highlight: XX
 
   - id: 1990s
     name: 1990s
     alumni:
-      - name: Dr. James Thompson
-        callsign: K8JT
-        graduation_year: 1998
-        degree: PhD Electrical Engineering
-        current_position: RF Systems Engineer, NASA Goddard
-        highlight: Established satellite ground station
+      - name: XX-NAME-XX
+        callsign: XX-CALLSIGN-XX
+        graduation_year: XX-YEAR-XX
+        degree: XX
+        current_position: XX-POSITION-XX, XX-COMPANY-XX
+        highlight: XX
 
-      - name: Mark Anderson
-        callsign: WB8MA
-        graduation_year: 1995
-        degree: Computer Engineering
-        current_position: VP Engineering, Cisco Systems
-        highlight: First digital mode operations
+      - name: XX-NAME-XX
+        callsign: XX-CALLSIGN-XX
+        graduation_year: XX-YEAR-XX
+        degree: XX
+        current_position: XX-POSITION-XX, XX-COMPANY-XX
+        highlight: XX
 
-# Career fields where alumni work
+# Career fields (placeholder statistics)
 career_fields:
   - name: Aerospace & Defense
-    count: 12
+    count: XX-NUMBER-XX
     icon: fa-rocket
 
   - name: Technology & Software
-    count: 18
+    count: XX-NUMBER-XX
     icon: fa-laptop-code
 
   - name: Research & Academia
-    count: 8
+    count: XX-NUMBER-XX
     icon: fa-flask
 
   - name: Communications & Broadcasting
-    count: 6
+    count: XX-NUMBER-XX
     icon: fa-broadcast-tower
 
   - name: Government & Public Service
-    count: 5
+    count: XX-NUMBER-XX
     icon: fa-landmark
 
-# Alumni registration
+# Alumni registration (form URL may be placeholder)
 registration:
-  form_url: "https://forms.gle/example"
+  form_url: "XX"
   description: >
     Are you a W8CUL alumnus? Register to stay connected with the club,
     receive our alumni newsletter, and be featured on this page.

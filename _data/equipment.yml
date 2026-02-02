@@ -23,9 +23,10 @@ antennas:
       - "Yaesu Rotator"
       - "Automation System ran on Raspberry Pi 4B"
 
+# Note: W8CUL primary repeater is 145.450 MHz (see resources.yml). Frequency below unverified - mark with XX until confirmed.
 repeaters:
   - name: Yaesu DR-2X 144/440 Analog/Fusion Repeater
-    frequency: 146.760MHz
+    frequency: XX
     offset: "-600kHz"
     tone: "PL: 103.5"
 

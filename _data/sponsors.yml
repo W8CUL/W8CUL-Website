@@ -53,23 +53,23 @@ sponsors:
     url: https://www.gigaparts.com/
     description: Amateur radio equipment supplier
 
-# Equipment Donors
+# Equipment Donors (donation years are placeholders - unverifiable)
 equipment_donors:
   - name: Dr. Matthew Valenti (KC8NHN)
     donation: Yaesu FT-991A Transceiver
-    year: 2024
+    year: XX-YEAR-XX
 
   - name: Morgantown ARC
     donation: Various antenna equipment
-    year: 2023
+    year: XX-YEAR-XX
 
   - name: WV ARRL Section
     donation: Study materials and books
-    year: 2023
+    year: XX-YEAR-XX
 
   - name: Anonymous Donor
     donation: RTL-SDR kits for education
-    year: 2024
+    year: XX-YEAR-XX
 
 # Sponsorship information
 sponsorship_info:
